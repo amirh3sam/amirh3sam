@@ -1,5 +1,5 @@
 # 💫 About Me:
-⚙️Automation Software Engineering <br>🌱Java,CucumberBDD,Junit,Selenium,SQL,Rest Assured,Jenkins,Jira <br>💡Idea: Eclipse,Intellij,VsCode,Dreamweaver<br>🧑‍💻 I enjoy working in a Team on Projects  <br>     Hobby:<br>🎸Play music<br>🎮 Play Video Game<br><br>🗨️ Ask me 
+⚙️Automation Software Engineering <br>🌱Java,CucumberBDD,Junit,Selenium,SQL,Rest Assured,Jenkins,Jira <br>💡Idea: Eclipse,Intellij,VsCode,Dreamweaver<br>🧑‍💻 I enjoy working in a Team on Projects  <br>     Hobby:<br>🎸Play music<br>🎮 Play Video Game<br><br>🗨️ Ask me : amirh3sam.badiei@gmail.com
 
 
 # 💻 Tech Stack:
