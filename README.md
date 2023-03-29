@@ -1,5 +1,5 @@
 # 💫 About Me:
-⚙️Automation Software Engineering <br>🌱Java,CucumberBDD,Junit,Selenium,SQL,Rest Assured <br>🧑‍💻 Have Fun in Team Working on Projects  <br>     Hobby:<br>🎸Play music<br>🎮 Play Video Game<br><br>🗨️ Ask me 
+⚙️Automation Software Engineering <br>🌱Java,CucumberBDD,Junit,Selenium,SQL,Rest Assured <br>💡Idea Eclipse,Intellij,VsCode<br>🧑‍💻 Have Fun in Team Working on Projects  <br>     Hobby:<br>🎸Play music<br>🎮 Play Video Game<br><br>🗨️ Ask me 
 
 
 # 💻 Tech Stack:
