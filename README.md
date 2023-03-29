@@ -1,5 +1,5 @@
 # 💫 About Me:
-⚙️Java Software Engineering in test <br>🌱Cucumber  Junit Selenium <br>🧑‍💻 Have Fun in Team Working on Projects  <br>     Hobby:<br>🎸Play music<br>🎮 Play Video Game<br><br>🗨️ Ask me 
+⚙️Automation Software Engineering <br>🌱Java,CucumberBDD,Junit,Selenium,SQL,Rest Assured <br>🧑‍💻 Have Fun in Team Working on Projects  <br>     Hobby:<br>🎸Play music<br>🎮 Play Video Game<br><br>🗨️ Ask me 
 
 
 # 💻 Tech Stack:
