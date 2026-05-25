@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitor</title>
+    <style>
+        /* --- 1. TOTAL ISOLATION --- */
+        #ais-compact-final, 
+        #ais-compact-final * { 
+            box-sizing: border-box !important; 
+            margin: 0; 
+            padding: 0; 
+            line-height: 1.5 !important;
+        }
+
+        #ais-compact-final {
+            font-family: 'JetBrains Mono', monospace;
+            background: #07080f;
+            color: #e8eaf2;
+            width: 95% !important; 
+            max-width: 720px !important;
+            margin: 40px auto !important; 
+            position: relative;
+            border-radius: 28px;
+            overflow: hidden;
+            border: 2px solid rgba(0,210,180,0.3);
+            display: block !important;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+        }
+
+        /* --- 2. GRID BACKGROUND --- */
+        #ais-compact-final::before {
+            content: ''; 
+            position: absolute; 
+            inset: 0; 
+            pointer-events: none; 
+            z-index: 0;
+            background-image: linear-gradient(rgba(0,210,180,0.05) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(0,210,180,0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* --- 3. HEADER --- */
+        .ais-header-final {
+            position: relative; 
+            z-index: 2;
+            padding: 0 50px;
+            display: flex !important; 
+            align-items: center; 
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0,210,180,0.2);
+            background: rgba(0,0,0,0.3);
+            height: 70px;
+            margin: 20px 20px 0 20px;
+            border-radius: 16px 16px 0 0;
+        }
+
+        .ais-tab-final {
+            font-size: 11px; 
+            font-weight: 600; 
+            letter-spacing: 0.2em; 
+            text-transform: uppercase;
+            color: #00d2b4;
+        }
+
+        /* --- 4. MAIN CONTENT --- */
+        .ais-content-final { 
+            position: relative; 
+            z-index: 2; 
+            padding: 40px 50px 50px 50px;
+            margin: 0 20px 20px 20px;
+        }
+
+        .proj-title-final { 
+            font-family: 'Syne', sans-serif; 
+            font-size: 28px !important; 
+            font-weight: 800 !important; 
+            color: #fff !important; 
+            margin-bottom: 12px !important;
+            display: block !important;
+        }
+
+        .proj-sub-final { 
+            font-size: 12px; 
+            color: #6b7194; 
+            margin-bottom: 35px !important; 
+            display: block !important;
+        }
+
+        /* --- 5. COMPACT GRID --- */
+        .dash-grid-final {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 15px !important; 
+            margin-bottom: 40px !important;
+        }
+
+        .dash-card-final {
+            background: rgba(12,15,30,0.8);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 30px 10px;
+            text-align: center !important;
+        }
+
+        .kpi-val-final {
+            font-family: 'Syne', sans-serif;
+            font-size: 38px !important;
+            font-weight: 800;
+            display: block;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .kpi-label-final { 
+            font-size: 9px; 
+            font-weight: 600; 
+            color: #6b7194; 
+            letter-spacing: 0.15em; 
+            text-transform: uppercase; 
+        }
+
+        /* --- 6. SYSTEM SPECS --- */
+        .specs-box-final {
+            background: rgba(0,0,0,0.45);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 16px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .specs-row-final {
+            display: flex !important;
+            justify-content: space-between;
+            padding: 18px 40px;
+            font-size: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+
+        .specs-row-final:last-child { 
+            border: none; 
+        }
+
+        .spec-key { 
+            color: #6b7194; 
+        }
+
+        .spec-val { 
+            color: #c0c8e0; 
+            font-weight: 600; 
+            text-align: right; 
+        }
+
+        .section-lbl { 
+            font-size: 10px; 
+            color: #00d2b4; 
+            margin-bottom: 15px; 
+            letter-spacing: 3px; 
+            font-weight: 800;
+            display: flex; 
+            align-items: center; 
+            gap: 15px;
+        }
+
+        .section-lbl::after { 
+            content: ''; 
+            flex: 1; 
+            height: 1px; 
+            background: rgba(0,210,180,0.2); 
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .dash-grid-final { 
+                grid-template-columns: 1fr !important; 
+            }
+            
+            .ais-content-final { 
+                padding: 35px 30px 40px 30px;
+                margin: 0 15px 15px 15px;
+            }
+            
+            .ais-header-final { 
+                padding: 0 30px;
+                margin: 15px 15px 0 15px;
+            }
+            
+            .specs-row-final {
+                padding: 15px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="ais-compact-final">
+        <div class="ais-header-final">
+            <div class="ais-tab-final">⬡ SYSTEM_MONITOR</div>
+            <div style="font-size: 10px; color: #00ff88; font-weight: 800;">
+                ● ACTIVE_STATUS
+            </div>
+        </div>
+
+        <div class="ais-content-final">
+            <h1 class="proj-title-final">System Overview</h1>
+            <p class="proj-sub-final">Autonomous pipeline tracking via amirhesamtech.com API.</p>
+
+            <div class="dash-grid-final">
+                <div class="dash-card-final" style="border-top: 3px solid #00d2b4;">
+                    <span class="kpi-val-final" style="color: #00d2b4;">124</span>
+                    <span class="kpi-label-final">Articles</span>
+                </div>
+                <div class="dash-card-final" style="border-top: 3px solid #00ff88;">
+                    <span class="kpi-val-final" style="color: #00ff88;">08</span>
+                    <span class="kpi-label-final">Today</span>
+                </div>
+                <div class="dash-card-final" style="border-top: 3px solid #7c6aff;">
+                    <span class="kpi-val-final" style="color: #7c6aff; font-size: 26px !important; margin-top: 8px;">08:00</span>
+                    <span class="kpi-label-final">Cycle</span>
+                </div>
+            </div>
+
+            <div class="section-lbl">CORE_SPECIFICATIONS</div>
+            <div class="specs-box-final">
+                <div class="specs-row-final">
+                    <span class="spec-key">Logic Engine</span>
+                    <span class="spec-val">Claude 3.5 Sonnet</span>
+                </div>
+                <div class="specs-row-final">
+                    <span class="spec-key">Protocol</span>
+                    <span class="spec-val">WP REST API (Live)</span>
+                </div>
+                <div class="specs-row-final">
+                    <span class="spec-key">Status</span>
+                    <span class="spec-val" style="color: #00ff88;">OPTIMAL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
