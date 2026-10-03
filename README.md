@@ -212,10 +212,9 @@ flowchart LR
 
 <div align="center">
 
-<!-- Replace the links below with your own -->
-[![GitHub](https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=00F7FF)](https://github.com/amirh3sam)
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-000000?style=for-the-badge&logo=linkedin&logoColor=FF00FF)](https://www.linkedin.com/in/YOUR-LINKEDIN)
-[![Email](https://img.shields.io/badge/EMAIL-000000?style=for-the-badge&logo=gmail&logoColor=00FF41)](mailto:YOUR-EMAIL@example.com)
+[![Website](https://img.shields.io/badge/AMIRHESAMTECH.COM-000000?style=for-the-badge&logo=googlechrome&logoColor=00F7FF)](https://amirhesamtech.com)
+[![GitHub](https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=FF00FF)](https://github.com/amirh3sam)
+[![TikTok](https://img.shields.io/badge/TIKTOK-000000?style=for-the-badge&logo=tiktok&logoColor=00FF41)](https://www.tiktok.com/@techwithamirh3sam)
 
 <img src="https://visitcount.itsvg.in/api?id=Amirh3sam&label=PROFILE%20CONNECTIONS&icon=5&pretty=true" />
 
