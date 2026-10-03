@@ -1,128 +1,190 @@
-# 👋 Hi, I'm Amirhesam
+<div align="center">
 
-### ⚙️ Automation Software Engineer | SDET
-
-I enjoy building reliable automation frameworks, testing APIs and web applications, working with databases, and collaborating with teams to deliver high-quality software.
+# ⚡ AMIRHESAM TECH // SYSTEM ONLINE ⚡
 
 ```text
-☕ Java        🥒 Cucumber BDD       🌐 Selenium
-🔌 REST API    🗄️ SQL / JDBC         🔧 Jenkins
-🧪 JUnit       📋 Jira               🐳 Docker
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║       > AUTOMATION SOFTWARE ENGINEER // SDET                 ║
+║       > BUILDING // TESTING // AUTOMATING                    ║
+║       > STATUS: ONLINE                                       ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
-### 🚀 About Me
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Automation+Software+Engineer+%2F%2F+SDET;Java+%7C+Selenium+%7C+Cucumber+BDD;REST+Assured+%7C+SQL+%7C+Jenkins;Automate+%2F%2F+Test+%2F%2F+Improve" />
 
-- ⚙️ Automation Software Engineer
-- 🌱 Working with **Java, Cucumber BDD, JUnit, Selenium, SQL, REST Assured, Jenkins & Jira**
-- 🧑‍💻 I enjoy working with teams on software projects
-- 💡 IDEs & Editors: **IntelliJ IDEA, Eclipse, VS Code & Dreamweaver**
-- 🧪 Interested in **UI, API & Database Automation**
-- 📚 Always learning and improving my automation skills
-
-### 🎯 Outside of Tech
-
-🎸 Playing Music &nbsp;&nbsp; 🎮 Video Games &nbsp;&nbsp; 📸 Photography
+</div>
 
 ---
 
-# 🛠️ Tech Stack
+## `> WHO_AM_I.exe`
 
-## ☕ Languages & Web
+```yaml
+name: Amirhesam
+role: Automation Software Engineer
+focus:
+  - UI Automation
+  - API Automation
+  - Database Testing
+  - CI/CD
+  - Automation Frameworks
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+current_stack:
+  - Java
+  - Selenium
+  - Cucumber BDD
+  - JUnit
+  - REST Assured
+  - SQL
+  - Jenkins
+  - Jira
 
-## 🧪 Test Automation
+hobbies:
+  - 🎸 Music
+  - 🎮 Gaming
+  - 📸 Photography
 
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
-![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=flat-square&logo=cucumber&logoColor=white)
-![JUnit5](https://img.shields.io/badge/JUnit5-25A162?style=flat-square&logo=junit5&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit-25A162?style=flat-square&logo=junit5&logoColor=white)
-![TestNG](https://img.shields.io/badge/TestNG-FF6C37?style=flat-square&logoColor=white)
-![Serenity](https://img.shields.io/badge/Serenity-B7178C?style=flat-square&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white)
-![Apache POI](https://img.shields.io/badge/Apache_POI-D22128?style=flat-square&logo=apache&logoColor=white)
-
-## 🔌 API Testing
-
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-![REST Assured](https://img.shields.io/badge/REST_Assured-43B02A?style=flat-square&logoColor=white)
-
-## 🗄️ Database
-
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white)
-![JDBC](https://img.shields.io/badge/JDBC-007396?style=flat-square&logo=java&logoColor=white)
-
-## 🔄 CI/CD
-
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
-![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=flat-square&logo=azuredevops&logoColor=white)
-
-## 📋 Project Management
-
-![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-
-## ☁️ Cloud
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-
-## 💻 IDEs & Editors
-
-![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white)
-![Eclipse](https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=eclipseide&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
-![Dreamweaver](https://img.shields.io/badge/Dreamweaver-072401?style=flat-square&logo=adobedreamweaver&logoColor=white)
-
-## 🔀 Version Control
-
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Team Foundation Version Control](https://img.shields.io/badge/TFVC-0078D7?style=flat-square&logo=azuredevops&logoColor=white)
-
-## 🐳 Tools & Platforms
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
-
-## 📸 Image Editing
-
-![Adobe Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?style=flat-square&logo=adobephotoshop&logoColor=white)
-![Adobe Lightroom](https://img.shields.io/badge/Lightroom-31A8FF?style=flat-square&logo=adobelightroom&logoColor=white)
-![GIMP](https://img.shields.io/badge/GIMP-5C5543?style=flat-square&logo=gimp&logoColor=white)
-![Corel](https://img.shields.io/badge/Corel-61B821?style=flat-square&logoColor=white)
+status: "Always Learning..."
+```
 
 ---
 
-# 📊 GitHub Analytics
+## `> LOAD_TECH_ARSENAL.sh`
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=amirh3sam&show_icons=true&theme=github_dark&hide_border=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amirh3sam&layout=compact&theme=github_dark&hide_border=true" />
-</p>
+### `01 // PROGRAMMING + WEB`
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=amirh3sam&theme=github-dark-blue&hide_border=true" />
-</p>
+![Java](https://img.shields.io/badge/JAVA-000000?style=for-the-badge&logo=openjdk&logoColor=00F7FF)
+![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=FF00FF)
+![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=00F7FF)
+
+### `02 // AUTOMATION_CORE`
+
+![Selenium](https://img.shields.io/badge/SELENIUM-000000?style=for-the-badge&logo=selenium&logoColor=00FF41)
+![Cucumber](https://img.shields.io/badge/CUCUMBER_BDD-000000?style=for-the-badge&logo=cucumber&logoColor=00FF41)
+![JUnit5](https://img.shields.io/badge/JUNIT_5-000000?style=for-the-badge&logo=junit5&logoColor=FF00FF)
+![JUnit](https://img.shields.io/badge/JUNIT-000000?style=for-the-badge&logo=junit5&logoColor=00F7FF)
+![TestNG](https://img.shields.io/badge/TESTNG-000000?style=for-the-badge&logoColor=FF00FF)
+![Serenity](https://img.shields.io/badge/SERENITY-000000?style=for-the-badge&logoColor=00F7FF)
+![Maven](https://img.shields.io/badge/MAVEN-000000?style=for-the-badge&logo=apachemaven&logoColor=FF00FF)
+![Apache POI](https://img.shields.io/badge/APACHE_POI-000000?style=for-the-badge&logo=apache&logoColor=00F7FF)
+
+### `03 // API_INTERFACE`
+
+![Postman](https://img.shields.io/badge/POSTMAN-000000?style=for-the-badge&logo=postman&logoColor=FF00FF)
+![REST Assured](https://img.shields.io/badge/REST_ASSURED-000000?style=for-the-badge&logoColor=00F7FF)
+
+### `04 // DATABASE_NETWORK`
+
+![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logoColor=00F7FF)
+![MySQL](https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=00F7FF)
+![Oracle](https://img.shields.io/badge/ORACLE-000000?style=for-the-badge&logo=oracle&logoColor=FF0055)
+![JDBC](https://img.shields.io/badge/JDBC-000000?style=for-the-badge&logo=openjdk&logoColor=00FF41)
+
+### `05 // CI_CD_PIPELINE`
+
+![Jenkins](https://img.shields.io/badge/JENKINS-000000?style=for-the-badge&logo=jenkins&logoColor=00F7FF)
+![Azure DevOps](https://img.shields.io/badge/AZURE_DEVOPS-000000?style=for-the-badge&logo=azuredevops&logoColor=FF00FF)
+
+### `06 // PROJECT_CONTROL`
+
+![Jira](https://img.shields.io/badge/JIRA-000000?style=for-the-badge&logo=jira&logoColor=00F7FF)
+![Azure](https://img.shields.io/badge/AZURE-000000?style=for-the-badge&logo=microsoftazure&logoColor=FF00FF)
+
+### `07 // CLOUD_NETWORK`
+
+![AWS](https://img.shields.io/badge/AWS-000000?style=for-the-badge&logo=amazonaws&logoColor=FF00FF)
+![Azure](https://img.shields.io/badge/AZURE-000000?style=for-the-badge&logo=microsoftazure&logoColor=00F7FF)
+![Cloudflare](https://img.shields.io/badge/CLOUDFLARE-000000?style=for-the-badge&logo=cloudflare&logoColor=FF00FF)
+
+### `08 // DEVELOPMENT_ENVIRONMENT`
+
+![IntelliJ IDEA](https://img.shields.io/badge/INTELLIJ_IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=FF00FF)
+![Eclipse](https://img.shields.io/badge/ECLIPSE-000000?style=for-the-badge&logo=eclipseide&logoColor=00F7FF)
+![VS Code](https://img.shields.io/badge/VS_CODE-000000?style=for-the-badge&logo=visualstudiocode&logoColor=00F7FF)
+![Dreamweaver](https://img.shields.io/badge/DREAMWEAVER-000000?style=for-the-badge&logo=adobedreamweaver&logoColor=00FF41)
+
+### `09 // VERSION_CONTROL`
+
+![Git](https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=FF0055)
+![TFVC](https://img.shields.io/badge/TFVC-000000?style=for-the-badge&logo=azuredevops&logoColor=00F7FF)
+
+### `10 // SYSTEM_TOOLS`
+
+![Docker](https://img.shields.io/badge/DOCKER-000000?style=for-the-badge&logo=docker&logoColor=00F7FF)
+![Raspberry Pi](https://img.shields.io/badge/RASPBERRY_PI-000000?style=for-the-badge&logo=raspberrypi&logoColor=FF0055)
+
+### `11 // VISUAL_SYSTEM`
+
+![Photoshop](https://img.shields.io/badge/PHOTOSHOP-000000?style=for-the-badge&logo=adobephotoshop&logoColor=00F7FF)
+![Lightroom](https://img.shields.io/badge/LIGHTROOM-000000?style=for-the-badge&logo=adobelightroom&logoColor=00F7FF)
+![GIMP](https://img.shields.io/badge/GIMP-000000?style=for-the-badge&logo=gimp&logoColor=FF00FF)
+![Corel](https://img.shields.io/badge/COREL-000000?style=for-the-badge&logoColor=00FF41)
 
 ---
 
-# ✍️ Dev Quote
+## `> SYSTEM_ANALYTICS.exe`
 
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" />
-</p>
+<div align="center">
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=amirh3sam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=FF00FF&text_color=FFFFFF" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amirh3sam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&text_color=FFFFFF" />
+
+</div>
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=amirh3sam&theme=tokyonight&hide_border=true&background=0D1117&stroke=00F7FF&ring=FF00FF&fire=FF00FF&currStreakLabel=00F7FF" />
+
+</div>
 
 ---
 
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=Amirh3sam&label=Profile%20Views&icon=5&pretty=true" />
-</p>
+## `> PERSONAL_MODULES`
 
-<p align="center">
-  <b>⚙️ Automate • 🧪 Test • 🚀 Improve</b>
-</p>
+```text
+[ MUSIC MODULE ]       ██████████ ONLINE  🎸
+[ GAMING MODULE ]      ██████████ ONLINE  🎮
+[ PHOTOGRAPHY ]        ██████████ ONLINE  📸
+[ AUTOMATION ]         ██████████ ONLINE  ⚙️
+[ LEARNING ]           ██████████ ACTIVE  🧠
+```
+
+---
+
+## `> RANDOM_TRANSMISSION`
+
+<div align="center">
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+
+</div>
+
+---
+
+## `> CONNECTION_COUNTER`
+
+<div align="center">
+
+<img src="https://visitcount.itsvg.in/api?id=Amirh3sam&label=PROFILE%20CONNECTIONS&icon=5&pretty=true" />
+
+</div>
+
+---
+
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                                                              │
+│     SYSTEM STATUS  : ONLINE                                  │
+│     CURRENT MODE   : BUILD // TEST // AUTOMATE               │
+│     NEXT OBJECTIVE : KEEP LEARNING                           │
+│                                                              │
+└──────────────────────────────────────────────────────────────┘
+```
+
+<div align="center">
+
+### `⚡ AUTOMATE // TEST // DEPLOY // REPEAT ⚡`
+
+</div>
