@@ -28,6 +28,10 @@ START = "<!--COMMIT-COUNT:START-->"
 END = "<!--COMMIT-COUNT:END-->"
 
 
+class RateLimited(Exception):
+    """The API refused us for quota reasons, not for permissions."""
+
+
 def get(url, tolerate=(404, 409)):
     """GET a URL, returning (parsed body, headers). (None, {}) on a tolerated code.
 
@@ -44,6 +48,12 @@ def get(url, tolerate=(404, 409)):
         with urllib.request.urlopen(req, timeout=30) as r:
             return json.loads(r.read().decode()), dict(r.headers)
     except urllib.error.HTTPError as e:
+        # a 403 with no quota left is rate limiting, not a permissions problem
+        if e.code in (403, 429) and e.headers.get("x-ratelimit-remaining") == "0":
+            raise RateLimited(
+                f"API quota exhausted (resets at "
+                f"{e.headers.get('x-ratelimit-reset', 'unknown')})."
+            ) from None
         if e.code in tolerate:
             return None, {}
         raise
@@ -64,6 +74,34 @@ def paginate(endpoint, tolerate=(404, 409)):
     return out
 
 
+def diagnose_token():
+    """Say plainly what this token can see, so a bad secret is obvious in the log."""
+    if not TOKEN:
+        print("No token supplied. Counting public repositories only.")
+        return
+    try:
+        req = urllib.request.Request(f"{API}/user")
+        req.add_header("Authorization", f"Bearer {TOKEN}")
+        req.add_header("Accept", "application/vnd.github+json")
+        req.add_header("User-Agent", f"{LOGIN}-commit-counter")
+        with urllib.request.urlopen(req, timeout=30) as r:
+            scopes = r.headers.get("x-oauth-scopes", "")
+            who = json.loads(r.read().decode()).get("login", "?")
+        if scopes.strip():
+            print(f"Token acts as '{who}' with scopes: {scopes}")
+            if "repo" not in [s.strip() for s in scopes.split(",")]:
+                print("WARNING: this token has no `repo` scope, so private "
+                      "repositories stay invisible. Regenerate it with `repo` "
+                      "ticked.", file=sys.stderr)
+        else:
+            print(f"Token acts as '{who}' (fine-grained or no scopes listed).")
+    except urllib.error.HTTPError as e:
+        # the Actions GITHUB_TOKEN cannot call /user at all
+        print(f"Token cannot read account-level data (HTTP {e.code}). "
+              f"This is expected for the built-in GITHUB_TOKEN; add a "
+              f"COMMIT_COUNT_TOKEN secret to include private repositories.")
+
+
 def list_repos():
     """Repos visible for LOGIN, plus whether private ones were included.
 
@@ -74,7 +112,9 @@ def list_repos():
     if TOKEN:
         repos = paginate("user/repos?affiliation=owner", tolerate=(403, 404, 409))
         if repos:
-            return repos, True
+            n_priv = sum(1 for r in repos if r.get("private"))
+            print(f"Account-wide listing OK: {len(repos)} repos, {n_priv} private.")
+            return repos, n_priv > 0
         print("Account-wide listing unavailable; counting public repos only.")
     return paginate(f"users/{LOGIN}/repos"), False
 
@@ -104,6 +144,7 @@ def badge(label, value, logo, color):
 
 
 def main():
+    diagnose_token()
     repos, saw_private = list_repos()
     if not repos:
         print("No repositories visible to this token.", file=sys.stderr)
@@ -186,4 +227,10 @@ def esc_xml(s):
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except RateLimited as e:
+        # bail out before writing anything, so a half-finished count never
+        # lands on the profile as if it were real
+        print(f"{e} Leaving the current numbers in place.", file=sys.stderr)
+        sys.exit(1)
