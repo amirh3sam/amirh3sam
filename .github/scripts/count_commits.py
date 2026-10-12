@@ -22,6 +22,7 @@ API = "https://api.github.com"
 LOGIN = os.environ.get("LOGIN", "amirh3sam")
 TOKEN = os.environ.get("GH_TOKEN", "").strip()
 README = os.environ.get("README_PATH", "README.md")
+DASHBOARD = os.environ.get("DASHBOARD_PATH", "assets/ops-dashboard.svg")
 
 START = "<!--COMMIT-COUNT:START-->"
 END = "<!--COMMIT-COUNT:END-->"
@@ -140,9 +141,43 @@ def main():
     )
     open(README, "w", encoding="utf-8", newline="\n").write(updated)
 
+    svg_changed = update_dashboard(total, len(repos), label, today)
+
     print(f"repos={len(repos)} total={total} public={public} private={private}")
-    print("changed" if updated != text else "unchanged")
+    print("changed" if (updated != text or svg_changed) else "unchanged")
     return 0
+
+
+def update_dashboard(total, repo_count, label, today):
+    """Rewrite the counter panel in the OPS CENTER dashboard SVG."""
+    if not os.path.exists(DASHBOARD):
+        return False
+
+    svg = open(DASHBOARD, encoding="utf-8").read()
+    before = svg
+
+    fields = {
+        "oc-count": f"{total:,}",
+        "oc-label": label,
+        "oc-sub": f"{repo_count} REPOS · SYNCED {today}",
+    }
+    for el_id, value in fields.items():
+        # replace only the text content of the element carrying this id
+        pattern = rf'(<text id="{el_id}"[^>]*>)(.*?)(</text>)'
+        if not re.search(pattern, svg, flags=re.S):
+            print(f"Warning: #{el_id} not found in {DASHBOARD}.", file=sys.stderr)
+            continue
+        svg = re.sub(pattern, lambda m: m.group(1) + esc_xml(value) + m.group(3),
+                     svg, flags=re.S)
+
+    if svg != before:
+        open(DASHBOARD, "w", encoding="utf-8", newline="\n").write(svg)
+        return True
+    return False
+
+
+def esc_xml(s):
+    return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
 if __name__ == "__main__":

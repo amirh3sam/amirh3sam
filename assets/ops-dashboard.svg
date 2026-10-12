@@ -24,18 +24,12 @@
 <rect x="591" y="141" width="14" height="54" fill="#00ff41" opacity="0.85" filter="url(#g)"><animate attributeName="height" values="54;45;38;54" dur="3.2s" repeatCount="indefinite"/><animate attributeName="y" values="141;150;157;141" dur="2.6s" repeatCount="indefinite"/></rect>
 <rect x="612" y="146" width="14" height="49" fill="#00ff41" opacity="0.85" filter="url(#g)"><animate attributeName="height" values="49;88;57;49" dur="3.3s" repeatCount="indefinite"/><animate attributeName="y" values="146;107;138;146" dur="3.7s" repeatCount="indefinite"/></rect>
 <rect x="633" y="99" width="14" height="96" fill="#00ff41" opacity="0.85" filter="url(#g)"><animate attributeName="height" values="96;94;94;96" dur="4.0s" repeatCount="indefinite"/><animate attributeName="y" values="99;101;101;99" dur="3.8s" repeatCount="indefinite"/></rect>
-<rect x="680" y="50" width="300" height="165" rx="8" fill="#0a0f1f" stroke="#00f7ff" stroke-opacity="0.7"/><rect x="680" y="50" width="300" height="165" rx="8" fill="url(#grid)"/><text x="694" y="72" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#00f7ff">NETWORK RADAR</text>
-<circle cx="830" cy="138" r="20" fill="none" stroke="#00f7ff" stroke-opacity="0.35"/>
-<circle cx="830" cy="138" r="40" fill="none" stroke="#00f7ff" stroke-opacity="0.35"/>
-<circle cx="830" cy="138" r="60" fill="none" stroke="#00f7ff" stroke-opacity="0.35"/>
-<line x1="768" y1="138" x2="892" y2="138" stroke="#00f7ff" stroke-opacity="0.25"/><line x1="830" y1="76" x2="830" y2="200" stroke="#00f7ff" stroke-opacity="0.25"/>
-<line x1="830" y1="138" x2="890" y2="138" stroke="#00ff41" stroke-width="2" filter="url(#g)"><animateTransform attributeName="transform" type="rotate" from="0 830 138" to="360 830 138" dur="4s" repeatCount="indefinite"/></line>
-<circle cx="819" cy="168" r="3" fill="#ff00ff" filter="url(#g)"><animate attributeName="opacity" values="1;0.1;1" dur="2.5s" repeatCount="indefinite"/></circle>
-<circle cx="811" cy="155" r="3" fill="#ff00ff" filter="url(#g)"><animate attributeName="opacity" values="1;0.1;1" dur="2.6s" repeatCount="indefinite"/></circle>
-<circle cx="833" cy="183" r="3" fill="#ff00ff" filter="url(#g)"><animate attributeName="opacity" values="1;0.1;1" dur="3.0s" repeatCount="indefinite"/></circle>
-<circle cx="858" cy="173" r="3" fill="#ff00ff" filter="url(#g)"><animate attributeName="opacity" values="1;0.1;1" dur="2.9s" repeatCount="indefinite"/></circle>
-<circle cx="844" cy="188" r="3" fill="#ff00ff" filter="url(#g)"><animate attributeName="opacity" values="1;0.1;1" dur="3.2s" repeatCount="indefinite"/></circle>
-<circle cx="852" cy="93" r="3" fill="#ff00ff" filter="url(#g)"><animate attributeName="opacity" values="1;0.1;1" dur="1.6s" repeatCount="indefinite"/></circle>
+<rect x="680" y="50" width="300" height="165" rx="8" fill="#0a0f1f" stroke="#00f7ff" stroke-opacity="0.7"/><rect x="680" y="50" width="300" height="165" rx="8" fill="url(#grid)"/><text x="694" y="72" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#00f7ff">COMMIT COUNTER</text>
+<circle cx="962" cy="68" r="4" fill="#00ff41" filter="url(#g)"><animate attributeName="opacity" values="1;0.15;1" dur="2s" repeatCount="indefinite"/></circle>
+<line x1="694" y1="84" x2="966" y2="84" stroke="#00f7ff" stroke-opacity="0.18"/>
+<text id="oc-count" x="830" y="150" text-anchor="middle" font-family="Courier New, monospace" font-size="58" font-weight="bold" fill="#00f7ff" filter="url(#g)">793</text>
+<text id="oc-label" x="830" y="176" text-anchor="middle" font-family="Courier New, monospace" font-size="11" font-weight="bold" letter-spacing="3" fill="#00f7ff" fill-opacity="0.8">TOTAL COMMITS</text>
+<text id="oc-sub" x="830" y="199" text-anchor="middle" font-family="Courier New, monospace" font-size="10" letter-spacing="1" fill="#ff00ff" fill-opacity="0.75">69 REPOS · SYNCED 2026-10-12</text>
 <rect x="20" y="235" width="470" height="170" rx="8" fill="#0a0f1f" stroke="#fff200" stroke-opacity="0.7"/><rect x="20" y="235" width="470" height="170" rx="8" fill="url(#grid)"/><text x="34" y="257" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#fff200">LIVE TEST LOGS</text>
 <defs><clipPath id="lg"><rect x="30" y="262" width="450" height="135"/></clipPath></defs><g clip-path="url(#lg)"><g>
 <text x="34" y="282" font-family="Courier New, monospace" font-size="12" fill="#00ff41">[PASS] <tspan fill="#cbd5e1">LoginTest.shouldLogin ............ 1.2s</tspan></text>
