@@ -27,8 +27,13 @@ START = "<!--COMMIT-COUNT:START-->"
 END = "<!--COMMIT-COUNT:END-->"
 
 
-def get(url):
-    """GET a URL, returning (parsed body, headers). (None, {}) on 404/409."""
+def get(url, tolerate=(404, 409)):
+    """GET a URL, returning (parsed body, headers). (None, {}) on a tolerated code.
+
+    404 is a repo this token cannot see, 409 an empty one, and 403 is what the
+    Actions GITHUB_TOKEN returns for user-level endpoints such as /user/repos,
+    since it is scoped to a single repository rather than to an account.
+    """
     req = urllib.request.Request(url)
     req.add_header("Accept", "application/vnd.github+json")
     req.add_header("User-Agent", f"{LOGIN}-commit-counter")
@@ -38,29 +43,39 @@ def get(url):
         with urllib.request.urlopen(req, timeout=30) as r:
             return json.loads(r.read().decode()), dict(r.headers)
     except urllib.error.HTTPError as e:
-        # 409 is an empty repository, 404 a repo this token cannot see
-        if e.code in (404, 409):
+        if e.code in tolerate:
             return None, {}
         raise
 
 
-def list_repos():
-    """Every repo the token can see for LOGIN, private included when allowed."""
-    repos, page = [], 1
-    endpoint = "user/repos?affiliation=owner" if TOKEN else f"users/{LOGIN}/repos?"
+def paginate(endpoint, tolerate=(404, 409)):
+    """Collect every page of a list endpoint."""
+    out, page = [], 1
+    sep = "&" if "?" in endpoint else "?"
     while True:
-        body, _ = get(f"{API}/{endpoint}&per_page=100&page={page}")
+        body, _ = get(f"{API}/{endpoint}{sep}per_page=100&page={page}", tolerate)
         if not body:
             break
-        repos.extend(body)
+        out.extend(body)
         if len(body) < 100:
             break
         page += 1
-    # a token without visibility into the account still returns this repo only
-    if not repos:
-        body, _ = get(f"{API}/users/{LOGIN}/repos?per_page=100")
-        repos = body or []
-    return repos
+    return out
+
+
+def list_repos():
+    """Repos visible for LOGIN, plus whether private ones were included.
+
+    Tries the account-wide endpoint first, which needs a token with the `repo`
+    scope, and falls back to the public listing when that is refused. Returns
+    (repos, saw_private) so the badge can say which it actually counted.
+    """
+    if TOKEN:
+        repos = paginate("user/repos?affiliation=owner", tolerate=(403, 404, 409))
+        if repos:
+            return repos, True
+        print("Account-wide listing unavailable; counting public repos only.")
+    return paginate(f"users/{LOGIN}/repos"), False
 
 
 def commits_in(full_name):
@@ -88,7 +103,7 @@ def badge(label, value, logo, color):
 
 
 def main():
-    repos = list_repos()
+    repos, saw_private = list_repos()
     if not repos:
         print("No repositories visible to this token.", file=sys.stderr)
         return 1
@@ -102,10 +117,14 @@ def main():
         else:
             public += n
 
+    # Only claim a grand total when private repos were actually in scope,
+    # so the badge never overstates what it counted.
+    label = "TOTAL COMMITS" if saw_private else "PUBLIC COMMITS"
+
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     block = "\n".join([
         START,
-        badge("TOTAL COMMITS", total, "git", "00F7FF"),
+        badge(label, total, "git", "00F7FF"),
         badge("REPOSITORIES", len(repos), "github", "FF00FF"),
         badge("LAST SYNC", today, "githubactions", "00FF41"),
         END,
