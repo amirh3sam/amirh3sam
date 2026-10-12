@@ -60,35 +60,16 @@ status: "Always Learning..."
 
 <img src="assets/divider.svg" width="100%" />
 
-## `> TECH_CITY_DEPARTMENTS.sh`
+## `> WHAT_I_BUILD`
 
-<div align="center">
+| | |
+|:--|:--|
+| 🌐 **Websites** | Landing pages, portfolios and business sites |
+| 💻 **Web apps** | Dashboards, admin panels, full-stack apps with APIs and databases |
+| 📱 **Mobile apps** | Cross-platform, Android and iOS |
+| 🧪 **Test automation** | Frameworks, scripts, bots and CI/CD pipelines |
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&pause=1200&color=FF00FF&center=true&vCenter=true&width=700&lines=Got+an+idea%3F+Let's+build+it.;Websites+%2F%2F+Web+Apps+%2F%2F+Mobile+Apps;Designed.+Built.+Tested.+Deployed." alt="Build" />
-
-</div>
-
-| `DEPARTMENT` | `WHAT WE BUILD` | `STATUS` |
-|:--|:--|:--|
-| 🌐 **Web Studio** | Landing pages, portfolios, business sites, responsive and fast | `🟢 ONLINE` |
-| 💻 **Web App Lab** | Dashboards, tools, admin panels, full-stack apps with APIs and databases | `🟢 ONLINE` |
-| 📱 **Mobile App Lab** | Cross-platform apps for Android and iOS | `🟢 ONLINE` |
-| 🧪 **QA Automation Division** | Test frameworks, scripts, bots, CI/CD pipelines | `🟢 ONLINE` |
-
-```mermaid
-flowchart LR
-    A[💡 IDEA] --> B[🎨 DESIGN] --> C[⚙️ BUILD] --> D[🧪 TEST] --> E[🚀 DEPLOY]
-    E -.feedback.-> A
-    style A fill:#0D1117,stroke:#00F7FF,color:#00F7FF
-    style B fill:#0D1117,stroke:#FF00FF,color:#FF00FF
-    style C fill:#0D1117,stroke:#00FF41,color:#00FF41
-    style D fill:#0D1117,stroke:#FFF200,color:#FFF200
-    style E fill:#0D1117,stroke:#FF2D95,color:#FF2D95
-```
-
-![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=FF00FF) ![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=00F7FF) ![JavaScript](https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=FFF200) ![React](https://img.shields.io/badge/REACT-000000?style=for-the-badge&logo=react&logoColor=00F7FF) ![Node.js](https://img.shields.io/badge/NODE.JS-000000?style=for-the-badge&logo=nodedotjs&logoColor=00FF41) ![Java](https://img.shields.io/badge/JAVA-000000?style=for-the-badge&logo=openjdk&logoColor=00F7FF) ![MySQL](https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=FF00FF) ![Docker](https://img.shields.io/badge/DOCKER-000000?style=for-the-badge&logo=docker&logoColor=00F7FF)
-
-> 💬 *Need a website or app? Reach out below and let's build something.*
+Designed, built, tested, deployed. Got an idea? [Let's build it.](https://amirhesamtech.com)
 
 <img src="assets/divider.svg" width="100%" />
 
@@ -128,7 +109,8 @@ Apps built end to end: designed, built, tested, shipped.
 
 | | |
 |:--|:--|
-| `LANGUAGES` | Java · SQL · HTML5 · CSS3 |
+| `LANGUAGES` | Java · SQL · JavaScript · HTML5 · CSS3 |
+| `WEB` | React · Node.js |
 | `AUTOMATION` | Selenium · Cucumber BDD · JUnit 5 · TestNG · Serenity · Maven · Apache POI |
 | `API` | REST Assured · Postman |
 | `DATA` | MySQL · Oracle · JDBC |
