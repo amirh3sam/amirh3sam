@@ -18,6 +18,8 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
+import dashboard
+
 API = "https://api.github.com"
 LOGIN = os.environ.get("LOGIN", "amirh3sam")
 TOKEN = os.environ.get("GH_TOKEN", "").strip()
@@ -183,47 +185,129 @@ def main():
     )
     open(README, "w", encoding="utf-8", newline="\n").write(updated)
 
-    svg_changed = update_dashboard(total, public, private, saw_private,
-                                   len(repos), label, today)
+    weeks, months = contribution_history()
+    svg_changed = update_dashboard({
+        "login": LOGIN,
+        "total": total, "public": public, "private": private,
+        "saw_private": saw_private, "repo_count": len(repos),
+        "label": label, "today": today,
+        "languages": language_mix(repos),
+        "months": months,
+        "weeks": weeks,
+        "recent": recent_commits(),
+    })
 
     print(f"repos={len(repos)} total={total} public={public} private={private}")
     print("changed" if (updated != text or svg_changed) else "unchanged")
     return 0
 
 
-def update_dashboard(total, public, private, saw_private, repo_count, label, today):
-    """Rewrite the counter panel in the OPS CENTER dashboard SVG."""
-    if not os.path.exists(DASHBOARD):
-        return False
-
-    svg = open(DASHBOARD, encoding="utf-8").read()
-    before = svg
-
-    split = (f"{public:,} PUBLIC · {private:,} PRIVATE" if saw_private
-             else "PUBLIC REPOS ONLY")
-    fields = {
-        "oc-count": f"{total:,}",
-        "oc-label": label,
-        "oc-sub": split,
-        "oc-meta": f"{repo_count} REPOS · SYNCED {today}",
-    }
-    for el_id, value in fields.items():
-        # replace only the text content of the element carrying this id
-        pattern = rf'(<text id="{el_id}"[^>]*>)(.*?)(</text>)'
-        if not re.search(pattern, svg, flags=re.S):
-            print(f"Warning: #{el_id} not found in {DASHBOARD}.", file=sys.stderr)
-            continue
-        svg = re.sub(pattern, lambda m: m.group(1) + esc_xml(value) + m.group(3),
-                     svg, flags=re.S)
-
+def update_dashboard(data):
+    """Regenerate the whole OPS CENTER dashboard from live data."""
+    svg = dashboard.render(data)
+    before = open(DASHBOARD, encoding="utf-8").read() if os.path.exists(DASHBOARD) else ""
     if svg != before:
         open(DASHBOARD, "w", encoding="utf-8", newline="\n").write(svg)
         return True
     return False
 
 
-def esc_xml(s):
-    return str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+# --------------------------------------------------------------------------
+# extra panels: each returns a falsy value on failure so one dead source
+# degrades its own panel instead of taking the whole run down
+
+
+def graphql(query):
+    body = json.dumps({"query": query}).encode()
+    req = urllib.request.Request("https://api.github.com/graphql", data=body)
+    req.add_header("Authorization", f"Bearer {TOKEN}")
+    req.add_header("User-Agent", f"{LOGIN}-commit-counter")
+    req.add_header("Content-Type", "application/json")
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.loads(r.read().decode())
+
+
+def contribution_history():
+    """Weekly totals and monthly commit counts for the last year.
+
+    Queried as `viewer`, which folds in private contributions, so the charts
+    match the counter rather than showing only the public half.
+    """
+    if not TOKEN:
+        return [], []
+    try:
+        d = graphql("""{ viewer { contributionsCollection { contributionCalendar {
+              weeks { contributionDays { date contributionCount } } } } } }""")
+        weeks_raw = (d["data"]["viewer"]["contributionsCollection"]
+                      ["contributionCalendar"]["weeks"])
+    except Exception as e:
+        print(f"Contribution history unavailable: {e}", file=sys.stderr)
+        return [], []
+
+    # keep the daily shape: the heatmap needs one cell per day, padded to a
+    # full week so partial weeks at either end still line up
+    weeks = []
+    for w in weeks_raw:
+        days = [d["contributionCount"] for d in w["contributionDays"]]
+        weeks.append(days + [0] * (7 - len(days)) if len(days) < 7 else days)
+
+    by_month, order = {}, []
+    for w in weeks_raw:
+        for day in w["contributionDays"]:
+            key = day["date"][:7]
+            if key not in by_month:
+                by_month[key] = 0
+                order.append(key)
+            by_month[key] += day["contributionCount"]
+    names = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
+    months = [(names[int(k[5:7]) - 1], by_month[k]) for k in order][-12:]
+    return weeks, months
+
+
+def language_mix(repos):
+    """Bytes per language across every visible repo."""
+    totals = {}
+    for r in repos:
+        body, _ = get(f"{API}/repos/{r['full_name']}/languages")
+        if body:
+            for lang, n in body.items():
+                totals[lang] = totals.get(lang, 0) + n
+    return sorted(totals.items(), key=lambda kv: -kv[1])
+
+
+def parse_ts(s):
+    """Parse a git timestamp. The API mixes 'Z' with real offsets like -04:00."""
+    try:
+        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+
+
+def recent_commits():
+    """The newest commits authored by LOGIN, newest first."""
+    url = (f"{API}/search/commits?q=author:{LOGIN}"
+           f"&sort=author-date&order=desc&per_page=10")
+    try:
+        body, _ = get(url, tolerate=(403, 404, 422))
+    except Exception as e:
+        print(f"Recent commits unavailable: {e}", file=sys.stderr)
+        return []
+    if not body or "items" not in body:
+        return []
+
+    now = datetime.now(timezone.utc)
+    out = []
+    for it in body["items"]:
+        when = parse_ts(it["commit"]["author"]["date"])
+        if when is None:
+            continue
+        mins = (now - when).total_seconds() / 60
+        ago = (f"{int(mins)}m" if mins < 60 else
+               f"{int(mins/60)}h" if mins < 1440 else f"{int(mins/1440)}d")
+        out.append((it["repository"]["name"],
+                    it["commit"]["message"].split("\n")[0], ago))
+    return out
 
 
 if __name__ == "__main__":

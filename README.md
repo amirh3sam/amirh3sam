@@ -86,14 +86,7 @@ flowchart LR
     style E fill:#0D1117,stroke:#FF2D95,color:#FF2D95
 ```
 
-![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=FF00FF)
-![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=00F7FF)
-![JavaScript](https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=FFF200)
-![React](https://img.shields.io/badge/REACT-000000?style=for-the-badge&logo=react&logoColor=00F7FF)
-![Node.js](https://img.shields.io/badge/NODE.JS-000000?style=for-the-badge&logo=nodedotjs&logoColor=00FF41)
-![Java](https://img.shields.io/badge/JAVA-000000?style=for-the-badge&logo=openjdk&logoColor=00F7FF)
-![MySQL](https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=FF00FF)
-![Docker](https://img.shields.io/badge/DOCKER-000000?style=for-the-badge&logo=docker&logoColor=00F7FF)
+![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=FF00FF) ![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=00F7FF) ![JavaScript](https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=FFF200) ![React](https://img.shields.io/badge/REACT-000000?style=for-the-badge&logo=react&logoColor=00F7FF) ![Node.js](https://img.shields.io/badge/NODE.JS-000000?style=for-the-badge&logo=nodedotjs&logoColor=00FF41) ![Java](https://img.shields.io/badge/JAVA-000000?style=for-the-badge&logo=openjdk&logoColor=00F7FF) ![MySQL](https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=FF00FF) ![Docker](https://img.shields.io/badge/DOCKER-000000?style=for-the-badge&logo=docker&logoColor=00F7FF)
 
 > 💬 *Need a website or app? Reach out below and let's build something.*
 
@@ -137,8 +130,6 @@ flowchart LR
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=amirh3sam&theme=tokyonight&hide_border=true&background=0D1117&stroke=00F7FF&ring=FF00FF&fire=FF00FF&currStreakLabel=00F7FF" />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=amirh3sam&bg_color=0D1117&color=00F7FF&line=FF00FF&point=FFF200&area=true&area_color=FF00FF&hide_border=true" width="95%" />
-
 </div>
 
 <img src="assets/divider.svg" width="100%" />
@@ -168,26 +159,10 @@ flowchart LR
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/AMIRHESAMTECH.COM-000000?style=for-the-badge&logo=googlechrome&logoColor=00F7FF)](https://amirhesamtech.com)
-[![GitHub](https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=FF00FF)](https://github.com/amirh3sam)
-[![TikTok](https://img.shields.io/badge/TIKTOK-000000?style=for-the-badge&logo=tiktok&logoColor=00FF41)](https://www.tiktok.com/@techwithamirh3sam)
-
-<img src="https://visitcount.itsvg.in/api?id=Amirh3sam&label=PROFILE%20CONNECTIONS&icon=5&pretty=true" />
+[![Website](https://img.shields.io/badge/AMIRHESAMTECH.COM-000000?style=for-the-badge&logo=googlechrome&logoColor=00F7FF)](https://amirhesamtech.com) [![GitHub](https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=FF00FF)](https://github.com/amirh3sam) [![TikTok](https://img.shields.io/badge/TIKTOK-000000?style=for-the-badge&logo=tiktok&logoColor=00FF41)](https://www.tiktok.com/@techwithamirh3sam)
 
 </div>
 
-```text
-┌──────────────────────────────────────────────────────────────┐
-│                                                              │
-│     SYSTEM STATUS  : ONLINE                                  │
-│     CURRENT MODE   : BUILD // TEST // AUTOMATE               │
-│     NEXT OBJECTIVE : KEEP LEARNING                           │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
-```
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=18&pause=1000&color=FF00FF&center=true&vCenter=true&width=700&lines=%E2%9A%A1+AUTOMATE+%2F%2F+TEST+%2F%2F+BUILD+%2F%2F+DEPLOY+%2F%2F+REPEAT+%E2%9A%A1" />
-
-</div>
+<p align="center">
+  <img src="assets/status-panel.svg" alt="System online. Current mode: build, test, automate. Next objective: keep learning." width="100%">
+</p>
