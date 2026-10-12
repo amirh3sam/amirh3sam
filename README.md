@@ -176,6 +176,12 @@ flowchart LR
 
 <div align="center">
 
+<!--COMMIT-COUNT:START-->
+<img alt="TOTAL COMMITS" src="https://img.shields.io/badge/TOTAL_COMMITS-791-000000?style=for-the-badge&logo=git&logoColor=00F7FF" />
+<img alt="REPOSITORIES" src="https://img.shields.io/badge/REPOSITORIES-69-000000?style=for-the-badge&logo=github&logoColor=FF00FF" />
+<img alt="LAST SYNC" src="https://img.shields.io/badge/LAST_SYNC-2026--10--12-000000?style=for-the-badge&logo=githubactions&logoColor=00FF41" />
+<!--COMMIT-COUNT:END-->
+
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=amirh3sam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=FF00FF&text_color=FFFFFF" />
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amirh3sam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&text_color=FFFFFF" />
 

@@ -1,0 +1,48 @@
+name: Update commit count
+
+on:
+  # Hourly, at :23 rather than on the hour, where scheduled runs queue up.
+  # No `push` trigger on purpose: this job commits to this repo, and a push
+  # trigger would make it retrigger itself.
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: commit-count
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Count commits and rewrite the badges
+        env:
+          # COMMIT_COUNT_TOKEN is a personal access token with the `repo`
+          # scope. With it the count includes private repositories; without
+          # it the fallback token sees only this one, so the number covers
+          # public repos alone. Used for reading the API only.
+          GH_TOKEN: ${{ secrets.COMMIT_COUNT_TOKEN || secrets.GITHUB_TOKEN }}
+          LOGIN: ${{ github.repository_owner }}
+        run: python .github/scripts/count_commits.py
+
+      - name: Commit if the number moved
+        run: |
+          if [ -z "$(git status --porcelain README.md)" ]; then
+            echo "Count unchanged, nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update commit count [skip ci]"
+          git push
