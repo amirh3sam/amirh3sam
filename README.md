@@ -99,76 +99,24 @@ flowchart LR
 
 <img src="assets/divider.svg" width="100%" />
 
-## `> LOAD_TECH_ARSENAL.sh`
+## `> TECH_ARSENAL`
 
-<img src="assets/sec-01.svg" alt="01 // PROGRAMMING + WEB" width="100%" />
+<div align="center">
 
-![Java](https://img.shields.io/badge/JAVA-000000?style=for-the-badge&logo=openjdk&logoColor=00F7FF)
-![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=FF00FF)
-![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=00F7FF)
+![Java](https://img.shields.io/badge/JAVA-000000?style=flat-square&logo=openjdk&logoColor=00F7FF) ![Selenium](https://img.shields.io/badge/SELENIUM-000000?style=flat-square&logo=selenium&logoColor=00FF41) ![Cucumber](https://img.shields.io/badge/CUCUMBER-000000?style=flat-square&logo=cucumber&logoColor=00FF41) ![REST Assured](https://img.shields.io/badge/REST_ASSURED-000000?style=flat-square&logoColor=00F7FF) ![SQL](https://img.shields.io/badge/SQL-000000?style=flat-square&logo=mysql&logoColor=FF00FF) ![Jenkins](https://img.shields.io/badge/JENKINS-000000?style=flat-square&logo=jenkins&logoColor=00F7FF)
 
-<img src="assets/sec-02.svg" alt="02 // AUTOMATION_CORE" width="100%" />
+</div>
 
-![Selenium](https://img.shields.io/badge/SELENIUM-000000?style=for-the-badge&logo=selenium&logoColor=00FF41)
-![Cucumber BDD](https://img.shields.io/badge/CUCUMBER_BDD-000000?style=for-the-badge&logo=cucumber&logoColor=00FF41)
-![JUnit 5](https://img.shields.io/badge/JUNIT_5-000000?style=for-the-badge&logo=junit5&logoColor=FF00FF)
-![JUnit](https://img.shields.io/badge/JUNIT-000000?style=for-the-badge&logo=junit5&logoColor=00F7FF)
-![TestNG](https://img.shields.io/badge/TESTNG-000000?style=for-the-badge&logoColor=FF00FF)
-![Serenity](https://img.shields.io/badge/SERENITY-000000?style=for-the-badge&logoColor=00F7FF)
-![Maven](https://img.shields.io/badge/MAVEN-000000?style=for-the-badge&logo=apachemaven&logoColor=FF00FF)
-![Apache POI](https://img.shields.io/badge/APACHE_POI-000000?style=for-the-badge&logo=apache&logoColor=00F7FF)
-
-<img src="assets/sec-03.svg" alt="03 // API_INTERFACE" width="100%" />
-
-![Postman](https://img.shields.io/badge/POSTMAN-000000?style=for-the-badge&logo=postman&logoColor=FF00FF)
-![REST Assured](https://img.shields.io/badge/REST_ASSURED-000000?style=for-the-badge&logoColor=00F7FF)
-
-<img src="assets/sec-04.svg" alt="04 // DATABASE_NETWORK" width="100%" />
-
-![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logoColor=00F7FF)
-![MySQL](https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=00F7FF)
-![Oracle](https://img.shields.io/badge/ORACLE-000000?style=for-the-badge&logo=oracle&logoColor=FF0055)
-![JDBC](https://img.shields.io/badge/JDBC-000000?style=for-the-badge&logo=openjdk&logoColor=00FF41)
-
-<img src="assets/sec-05.svg" alt="05 // CI_CD_PIPELINE" width="100%" />
-
-![Jenkins](https://img.shields.io/badge/JENKINS-000000?style=for-the-badge&logo=jenkins&logoColor=00F7FF)
-![Azure DevOps](https://img.shields.io/badge/AZURE_DEVOPS-000000?style=for-the-badge&logo=azuredevops&logoColor=FF00FF)
-
-<img src="assets/sec-06.svg" alt="06 // PROJECT_CONTROL" width="100%" />
-
-![Jira](https://img.shields.io/badge/JIRA-000000?style=for-the-badge&logo=jira&logoColor=00F7FF)
-![Azure](https://img.shields.io/badge/AZURE-000000?style=for-the-badge&logo=microsoftazure&logoColor=FF00FF)
-
-<img src="assets/sec-07.svg" alt="07 // CLOUD_NETWORK" width="100%" />
-
-![AWS](https://img.shields.io/badge/AWS-000000?style=for-the-badge&logo=amazonaws&logoColor=FF00FF)
-![Azure](https://img.shields.io/badge/AZURE-000000?style=for-the-badge&logo=microsoftazure&logoColor=00F7FF)
-![Cloudflare](https://img.shields.io/badge/CLOUDFLARE-000000?style=for-the-badge&logo=cloudflare&logoColor=FF00FF)
-
-<img src="assets/sec-08.svg" alt="08 // DEVELOPMENT_ENVIRONMENT" width="100%" />
-
-![IntelliJ IDEA](https://img.shields.io/badge/INTELLIJ_IDEA-000000?style=for-the-badge&logo=intellijidea&logoColor=FF00FF)
-![Eclipse](https://img.shields.io/badge/ECLIPSE-000000?style=for-the-badge&logo=eclipseide&logoColor=00F7FF)
-![VS Code](https://img.shields.io/badge/VS_CODE-000000?style=for-the-badge&logo=visualstudiocode&logoColor=00F7FF)
-![Dreamweaver](https://img.shields.io/badge/DREAMWEAVER-000000?style=for-the-badge&logo=adobedreamweaver&logoColor=00FF41)
-
-<img src="assets/sec-09.svg" alt="09 // VERSION_CONTROL" width="100%" />
-
-![Git](https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=FF0055)
-![TFVC](https://img.shields.io/badge/TFVC-000000?style=for-the-badge&logo=azuredevops&logoColor=00F7FF)
-
-<img src="assets/sec-10.svg" alt="10 // SYSTEM_TOOLS" width="100%" />
-
-![Docker](https://img.shields.io/badge/DOCKER-000000?style=for-the-badge&logo=docker&logoColor=00F7FF)
-![Raspberry Pi](https://img.shields.io/badge/RASPBERRY_PI-000000?style=for-the-badge&logo=raspberrypi&logoColor=FF0055)
-
-<img src="assets/sec-11.svg" alt="11 // VISUAL_SYSTEM" width="100%" />
-
-![Photoshop](https://img.shields.io/badge/PHOTOSHOP-000000?style=for-the-badge&logo=adobephotoshop&logoColor=00F7FF)
-![Lightroom](https://img.shields.io/badge/LIGHTROOM-000000?style=for-the-badge&logo=adobelightroom&logoColor=00F7FF)
-![GIMP](https://img.shields.io/badge/GIMP-000000?style=for-the-badge&logo=gimp&logoColor=FF00FF)
-![Corel](https://img.shields.io/badge/COREL-000000?style=for-the-badge&logoColor=00FF41)
+| | |
+|:--|:--|
+| `LANGUAGES` | Java · SQL · HTML5 · CSS3 |
+| `AUTOMATION` | Selenium · Cucumber BDD · JUnit 5 · TestNG · Serenity · Maven · Apache POI |
+| `API` | REST Assured · Postman |
+| `DATA` | MySQL · Oracle · JDBC |
+| `CI / CD` | Jenkins · Azure DevOps · Docker · Git · TFVC |
+| `CLOUD` | AWS · Azure · Cloudflare · Raspberry Pi |
+| `TOOLS` | IntelliJ IDEA · Eclipse · VS Code · Jira |
+| `VISUAL` | Photoshop · Lightroom · GIMP · Corel |
 
 <img src="assets/divider.svg" width="100%" />
 
@@ -177,8 +125,10 @@ flowchart LR
 <div align="center">
 
 <!--COMMIT-COUNT:START-->
-<img alt="PUBLIC COMMITS" src="https://img.shields.io/badge/PUBLIC_COMMITS-331-000000?style=for-the-badge&logo=git&logoColor=00F7FF" />
-<img alt="REPOSITORIES" src="https://img.shields.io/badge/REPOSITORIES-16-000000?style=for-the-badge&logo=github&logoColor=FF00FF" />
+<img alt="TOTAL COMMITS" src="https://img.shields.io/badge/TOTAL_COMMITS-795-000000?style=for-the-badge&logo=git&logoColor=00F7FF" />
+<img alt="PUBLIC" src="https://img.shields.io/badge/PUBLIC-331-000000?style=for-the-badge&logo=unlock&logoColor=00FF41" />
+<img alt="PRIVATE" src="https://img.shields.io/badge/PRIVATE-464-000000?style=for-the-badge&logo=lock&logoColor=FF00FF" />
+<img alt="REPOS" src="https://img.shields.io/badge/REPOS-69-000000?style=for-the-badge&logo=github&logoColor=FF00FF" />
 <img alt="LAST SYNC" src="https://img.shields.io/badge/LAST_SYNC-2026--10--12-000000?style=for-the-badge&logo=githubactions&logoColor=00FF41" />
 <!--COMMIT-COUNT:END-->
 

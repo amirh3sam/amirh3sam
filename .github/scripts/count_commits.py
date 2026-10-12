@@ -123,13 +123,14 @@ def main():
     label = "TOTAL COMMITS" if saw_private else "PUBLIC COMMITS"
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    block = "\n".join([
-        START,
-        badge(label, total, "git", "00F7FF"),
-        badge("REPOSITORIES", len(repos), "github", "FF00FF"),
-        badge("LAST SYNC", today, "githubactions", "00FF41"),
-        END,
-    ])
+    rows = [START, badge(label, f"{total:,}", "git", "00F7FF")]
+    if saw_private:
+        rows.append(badge("PUBLIC", f"{public:,}", "unlock", "00FF41"))
+        rows.append(badge("PRIVATE", f"{private:,}", "lock", "FF00FF"))
+    rows.append(badge("REPOS", len(repos), "github", "FF00FF"))
+    rows.append(badge("LAST SYNC", today, "githubactions", "00FF41"))
+    rows.append(END)
+    block = "\n".join(rows)
 
     text = open(README, encoding="utf-8").read()
     if START not in text or END not in text:
@@ -141,14 +142,15 @@ def main():
     )
     open(README, "w", encoding="utf-8", newline="\n").write(updated)
 
-    svg_changed = update_dashboard(total, len(repos), label, today)
+    svg_changed = update_dashboard(total, public, private, saw_private,
+                                   len(repos), label, today)
 
     print(f"repos={len(repos)} total={total} public={public} private={private}")
     print("changed" if (updated != text or svg_changed) else "unchanged")
     return 0
 
 
-def update_dashboard(total, repo_count, label, today):
+def update_dashboard(total, public, private, saw_private, repo_count, label, today):
     """Rewrite the counter panel in the OPS CENTER dashboard SVG."""
     if not os.path.exists(DASHBOARD):
         return False
@@ -156,10 +158,13 @@ def update_dashboard(total, repo_count, label, today):
     svg = open(DASHBOARD, encoding="utf-8").read()
     before = svg
 
+    split = (f"{public:,} PUBLIC · {private:,} PRIVATE" if saw_private
+             else "PUBLIC REPOS ONLY")
     fields = {
         "oc-count": f"{total:,}",
         "oc-label": label,
-        "oc-sub": f"{repo_count} REPOS · SYNCED {today}",
+        "oc-sub": split,
+        "oc-meta": f"{repo_count} REPOS · SYNCED {today}",
     }
     for el_id, value in fields.items():
         # replace only the text content of the element carrying this id
