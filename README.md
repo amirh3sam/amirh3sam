@@ -92,6 +92,32 @@ flowchart LR
 
 <img src="assets/divider.svg" width="100%" />
 
+## `> APP_SHOWCASE.app`
+
+Apps built end to end: designed, built, tested, shipped.
+
+**Daily Hub** &nbsp;·&nbsp; <sub>one place for habits, money, meals, to-dos and sleep</sub>
+
+<table align="center">
+<tr>
+<td align="center" width="25%"><img src="assets/apps/hub-today.jpg" alt="Daily Hub home screen: habits, money, meals, to-dos and sleep summarised for the day." width="195"><br><sub><b>Today</b><br>the day at a glance</sub></td>
+<td align="center" width="25%"><img src="assets/apps/hub-habits.jpg" alt="Habit tracker with a week strip and five daily habits." width="195"><br><sub><b>Habits</b><br>streaks and a week strip</sub></td>
+<td align="center" width="25%"><img src="assets/apps/hub-meals.jpg" alt="Meal planner asking which cuisine you are in the mood for." width="195"><br><sub><b>Meals</b><br>cook, grocery, fridge</sub></td>
+<td align="center" width="25%"><img src="assets/apps/hub-sleep.jpg" alt="Sleep sound mixer with a timer and ready-made ambient mixes." width="195"><br><sub><b>Sleep</b><br>mixable sounds, timer</sub></td>
+</tr>
+</table>
+
+**Scientific Calculator** &nbsp;·&nbsp; <sub>full function set with a graphing mode</sub>
+
+<table align="center">
+<tr>
+<td align="center" width="25%"><img src="assets/apps/calc-keypad.jpg" alt="Scientific calculator keypad with trigonometric, logarithmic and memory functions." width="195"><br><sub><b>Calculator</b><br>trig, logs, memory, history</sub></td>
+<td align="center" width="25%"><img src="assets/apps/calc-graph.jpg" alt="Graphing mode plotting three functions at once on a grid." width="195"><br><sub><b>Graph</b><br>up to five functions at once</sub></td>
+</tr>
+</table>
+
+<img src="assets/divider.svg" width="100%" />
+
 ## `> TECH_ARSENAL`
 
 <div align="center">
