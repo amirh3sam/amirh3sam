@@ -27,9 +27,9 @@
 <rect x="680" y="50" width="300" height="165" rx="8" fill="#0a0f1f" stroke="#00f7ff" stroke-opacity="0.7"/><rect x="680" y="50" width="300" height="165" rx="8" fill="url(#grid)"/><text x="694" y="72" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#00f7ff">COMMIT COUNTER</text>
 <circle cx="962" cy="68" r="4" fill="#00ff41" filter="url(#g)"><animate attributeName="opacity" values="1;0.15;1" dur="2s" repeatCount="indefinite"/></circle>
 <line x1="694" y1="84" x2="966" y2="84" stroke="#00f7ff" stroke-opacity="0.18"/>
-<text id="oc-count" x="830" y="150" text-anchor="middle" font-family="Courier New, monospace" font-size="58" font-weight="bold" fill="#00f7ff" filter="url(#g)">793</text>
-<text id="oc-label" x="830" y="176" text-anchor="middle" font-family="Courier New, monospace" font-size="11" font-weight="bold" letter-spacing="3" fill="#00f7ff" fill-opacity="0.8">TOTAL COMMITS</text>
-<text id="oc-sub" x="830" y="199" text-anchor="middle" font-family="Courier New, monospace" font-size="10" letter-spacing="1" fill="#ff00ff" fill-opacity="0.75">69 REPOS · SYNCED 2026-10-12</text>
+<text id="oc-count" x="830" y="150" text-anchor="middle" font-family="Courier New, monospace" font-size="58" font-weight="bold" fill="#00f7ff" filter="url(#g)">331</text>
+<text id="oc-label" x="830" y="176" text-anchor="middle" font-family="Courier New, monospace" font-size="11" font-weight="bold" letter-spacing="3" fill="#00f7ff" fill-opacity="0.8">PUBLIC COMMITS</text>
+<text id="oc-sub" x="830" y="199" text-anchor="middle" font-family="Courier New, monospace" font-size="10" letter-spacing="1" fill="#ff00ff" fill-opacity="0.75">16 REPOS · SYNCED 2026-10-12</text>
 <rect x="20" y="235" width="470" height="170" rx="8" fill="#0a0f1f" stroke="#fff200" stroke-opacity="0.7"/><rect x="20" y="235" width="470" height="170" rx="8" fill="url(#grid)"/><text x="34" y="257" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#fff200">LIVE TEST LOGS</text>
 <defs><clipPath id="lg"><rect x="30" y="262" width="450" height="135"/></clipPath></defs><g clip-path="url(#lg)"><g>
 <text x="34" y="282" font-family="Courier New, monospace" font-size="12" fill="#00ff41">[PASS] <tspan fill="#cbd5e1">LoginTest.shouldLogin ............ 1.2s</tspan></text>
