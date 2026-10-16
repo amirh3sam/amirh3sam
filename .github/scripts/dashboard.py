@@ -112,7 +112,7 @@ def p_months(x, y, w, h, months):
     return "".join(out)
 
 
-def p_counter(x, y, w, h, total, public, private, saw_private, repos, today, label):
+def p_counter(x, y, w, h, total, public, private, saw_private, repos, today, label, bots=0):
     out = [panel(x, y, w, h, "COMMIT COUNTER", CYAN)]
     out.append(f'<circle cx="{x+w-18}" cy="{y+18}" r="4" fill="{GREEN}" '
                f'filter="url(#g)"><animate attributeName="opacity" '
@@ -128,7 +128,8 @@ def p_counter(x, y, w, h, total, public, private, saw_private, repos, today, lab
              else "PUBLIC REPOS ONLY")
     out.append(text(cx, y + 136, split, 10, GREEN, anchor="middle", spacing=1,
                     opacity=0.85, el_id="oc-sub"))
-    out.append(text(cx, y + 154, f"{repos} REPOS · SYNCED {today}", 9,
+    meta = f"{repos} REPOS · {bots:,} AUTOMATED" if bots else f"{repos} REPOS"
+    out.append(text(cx, y + 154, f"{meta} · {today}", 9,
                     MAGENTA, anchor="middle", spacing=1, opacity=0.7,
                     el_id="oc-meta"))
     return "".join(out)
@@ -224,7 +225,8 @@ def render(d):
         p_languages(20, 50, 300, 165, d.get("languages")),
         p_months(340, 50, 320, 165, d.get("months")),
         p_counter(680, 50, 300, 165, d["total"], d["public"], d["private"],
-                  d["saw_private"], d["repo_count"], d["today"], d["label"]),
+                  d["saw_private"], d["repo_count"], d["today"], d["label"],
+                  d.get("bots", 0)),
         p_recent(20, 235, 470, 170, d.get("recent")),
         p_activity(510, 235, 470, 170, d.get("weeks")),
         '</svg>',

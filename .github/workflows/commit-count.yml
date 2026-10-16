@@ -18,6 +18,9 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # the count now also reads contributors per repo; cap it so a
+    # hung request cannot hold a runner open
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 

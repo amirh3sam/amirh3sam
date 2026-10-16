@@ -48,7 +48,12 @@ def get(url, tolerate=(404, 409)):
         req.add_header("Authorization", f"Bearer {TOKEN}")
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
-            return json.loads(r.read().decode()), dict(r.headers)
+            raw = r.read().decode().strip()
+            # an empty repo answers some endpoints with 204 No Content, and
+            # json.loads("") raises rather than returning nothing useful
+            if not raw:
+                return None, dict(r.headers)
+            return json.loads(raw), dict(r.headers)
     except urllib.error.HTTPError as e:
         # a 403 with no quota left is rate limiting, not a permissions problem
         if e.code in (403, 429) and e.headers.get("x-ratelimit-remaining") == "0":
@@ -166,10 +171,14 @@ def main():
     label = "TOTAL COMMITS" if saw_private else "PUBLIC COMMITS"
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    bots = automation_commits(repos)
+
     rows = [START, badge(label, f"{total:,}", "git", "00F7FF")]
     if saw_private:
         rows.append(badge("PUBLIC", f"{public:,}", "unlock", "00FF41"))
         rows.append(badge("PRIVATE", f"{private:,}", "lock", "FF00FF"))
+    if bots:
+        rows.append(badge("AUTOMATION", f"{bots:,}", "githubactions", "FFF200"))
     rows.append(badge("REPOS", len(repos), "github", "FF00FF"))
     rows.append(badge("LAST SYNC", today, "githubactions", "00FF41"))
     rows.append(END)
@@ -190,14 +199,14 @@ def main():
         "login": LOGIN,
         "total": total, "public": public, "private": private,
         "saw_private": saw_private, "repo_count": len(repos),
-        "label": label, "today": today,
+        "label": label, "today": today, "bots": bots,
         "languages": language_mix(repos),
         "months": months,
         "weeks": weeks,
         "recent": recent_commits(),
     })
 
-    print(f"repos={len(repos)} total={total} public={public} private={private}")
+    print(f"repos={len(repos)} total={total} public={public} private={private} bots={bots}")
     print("changed" if (updated != text or svg_changed) else "unchanged")
     return 0
 
@@ -262,6 +271,25 @@ def contribution_history():
     names = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
     months = [(names[int(k[5:7]) - 1], by_month[k]) for k in order][-12:]
     return weeks, months
+
+
+def automation_commits(repos):
+    """Commits made by bots in your own repos, counted separately from yours.
+
+    The commits API cannot filter by a bot author -- `?author=github-actions[bot]`
+    returns nothing -- so this reads the contributors endpoint instead, which
+    gives an exact per-author count in one request per repo.
+
+    Forks are skipped: their history belongs to the upstream project, not here.
+    """
+    total = 0
+    for r in repos:
+        if r.get("fork"):
+            continue
+        for c in paginate(f"repos/{r['full_name']}/contributors?anon=1"):
+            if isinstance(c, dict) and c.get("type") == "Bot":
+                total += c.get("contributions", 0)
+    return total
 
 
 def language_mix(repos):
