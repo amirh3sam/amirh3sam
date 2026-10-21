@@ -8,6 +8,29 @@
 
 <img src="assets/divider.svg" width="100%" />
 
+## `> EXPLORE_AMIRHESAMTECH.com`
+
+<a href="https://amirhesamtech.com/">
+  <img src="assets/website-portal.svg" alt="Visit AmirHesamTech: read the guides, try the tools and play browser games." width="100%" />
+</a>
+
+Explore my practical tech guides, free browser apps, games and projects on [**amirhesamtech.com**](https://amirhesamtech.com/).
+
+<table width="100%">
+<tr>
+<td width="33%" valign="top"><a href="https://amirhesamtech.com/guides/"><b>📚 Guides &amp; Tutorials ↗</b></a><br><sub>Homelab, Linux, test automation and AI tutorials.</sub></td>
+<td width="33%" valign="top"><a href="https://amirhesamtech.com/apps/"><b>🧰 Free Apps ↗</b></a><br><sub>Browser tools for tracking, planning and calculations.</sub></td>
+<td width="33%" valign="top"><a href="https://amirhesamtech.com/games/"><b>🎮 Games ↗</b></a><br><sub>Snake, 2048, Breakout and more. Play in your browser.</sub></td>
+</tr>
+<tr>
+<td width="33%" valign="top"><a href="https://amirhesamtech.com/media-lab/"><b>🎬 Media Lab ↗</b></a><br><sub>Short tech videos, demos and automation ideas.</sub></td>
+<td width="33%" valign="top"><a href="https://amirhesamtech.com/tech-hub/"><b>⚡ Tech Deal Hub ↗</b></a><br><sub>Desk, homelab and everyday tech picks.</sub></td>
+<td width="33%" valign="top"><a href="https://amirhesamtech.com/playbook/"><b>📖 PlayBook ↗</b></a><br><sub>Money Guild AI: a blog automation guide and toolkit.</sub></td>
+</tr>
+</table>
+
+<img src="assets/divider.svg" width="100%" />
+
 ## `> OPS_CENTER.live`
 
 <div align="center">
