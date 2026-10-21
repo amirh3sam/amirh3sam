@@ -92,8 +92,15 @@ Apps built end to end: designed, built, tested, shipped.
 
 <table align="center">
 <tr>
-<td align="center" width="25%"><img src="assets/apps/calc-keypad.jpg" alt="Scientific calculator keypad with trigonometric, logarithmic and memory functions." width="195"><br><sub><b>Calculator</b><br>trig, logs, memory, history</sub></td>
-<td align="center" width="25%"><img src="assets/apps/calc-graph.jpg" alt="Graphing mode plotting three functions at once on a grid." width="195"><br><sub><b>Graph</b><br>up to five functions at once</sub></td>
+<td align="center" colspan="2"><img src="assets/apps/calc-glossy.png" alt="Glossy Calc in the purple dark theme, with the scientific calculator and a graph plotting three functions side by side." width="820"><br><sub><b>Glossy Calculator</b><br>scientific functions and graphing side by side</sub></td>
+</tr>
+<tr>
+<td align="center" width="50%"><img src="assets/apps/calc-retro.png" alt="Retro Calc with orange operator keys, a green display and a graph plotting three functions." width="400"><br><sub><b>Retro Calculator</b><br>trig, logs, memory, history</sub></td>
+<td align="center" width="50%"><img src="assets/apps/calc-retro-graph.png" alt="Retro Calc graphing view with three functions and roots and intersections marked on the grid." width="400"><br><sub><b>Graph</b><br>up to five functions, roots and intersections</sub></td>
+</tr>
+<tr>
+<td align="center" width="50%"><img src="assets/apps/calc-units.png" alt="Retro Calc unit converter converting one meter to 3.28083989501 feet." width="400"><br><sub><b>Unit Converter</b><br>convert units and use the result in the calculator</sub></td>
+<td align="center" width="50%"><img src="assets/apps/calc-programmer.png" alt="Retro Calc programmer mode showing decimal, hexadecimal, octal and binary values with 32-bit signed integers selected." width="400"><br><sub><b>Programmer Mode</b><br>DEC, HEX, OCT and BIN</sub></td>
 </tr>
 </table>
 
