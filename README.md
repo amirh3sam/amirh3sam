@@ -127,6 +127,18 @@ Apps built end to end: designed, built, tested, shipped.
 </tr>
 </table>
 
+**[CodeQuest](https://codequest-game-inky.vercel.app/)** &nbsp;|&nbsp; <sub>a modern tech-city adventure for learning Java, JavaScript, TypeScript and Python, with a free 2D runner arcade</sub>
+
+<table align="center" width="100%">
+<tr>
+<td align="center" width="33%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-city.png" alt="CodeQuest city map with the developer beside the glowing Packet Dash arcade cabinet." width="240"></a><br><sub><b>Explore Tech City</b><br>walk between coding missions and the arcade</sub></td>
+<td align="center" width="33%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-packet-dash.png" alt="Packet Dash, a 2D city runner with an animated side-facing hoodie developer." width="240"></a><br><sub><b>Play Packet Dash</b><br>jump glitches and collect data bits</sub></td>
+<td align="center" width="33%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-console.png" alt="CodeQuest mission terminal opening with the task prompt before the coding editor." width="240"></a><br><sub><b>Build at the console</b><br>practice code and see its output</sub></td>
+</tr>
+</table>
+
+<sub><a href="https://codequest-game-inky.vercel.app/">Play the live game</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/codequest-game">Browse the source</a></sub>
+
 <img src="assets/divider.svg" width="100%" />
 
 ## `> TECH_ARSENAL`
