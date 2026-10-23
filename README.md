@@ -131,9 +131,10 @@ Apps built end to end: designed, built, tested, shipped.
 
 <table align="center" width="100%">
 <tr>
-<td align="center" width="33%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-city.png" alt="CodeQuest city map with the developer beside the glowing Packet Dash arcade cabinet." width="240"></a><br><sub><b>Explore Tech City</b><br>walk between coding missions and the arcade</sub></td>
-<td align="center" width="33%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-packet-dash.png" alt="Packet Dash, a 2D city runner with an animated side-facing hoodie developer." width="240"></a><br><sub><b>Play Packet Dash</b><br>jump glitches and collect data bits</sub></td>
-<td align="center" width="33%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-console.png" alt="CodeQuest mission terminal opening with the task prompt before the coding editor." width="240"></a><br><sub><b>Build at the console</b><br>practice code and see its output</sub></td>
+<td align="center" width="25%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-city.png" alt="CodeQuest city map with the developer beside the glowing Packet Dash arcade cabinet." width="240"></a><br><sub><b>Explore Tech City</b><br>walk between coding missions and the arcade</sub></td>
+<td align="center" width="25%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-packet-dash.png" alt="Packet Dash, a 2D city runner with an animated side-facing hoodie developer." width="240"></a><br><sub><b>Play Packet Dash</b><br>jump glitches and collect data bits</sub></td>
+<td align="center" width="25%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-console.png" alt="CodeQuest mission terminal opening with the task prompt before the coding editor." width="240"></a><br><sub><b>Build at the console</b><br>practice code and see its output</sub></td>
+<td align="center" width="25%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-tablet.png" alt="Illustrated 2D first-person view of the developer raising a wrist tablet to open a coding mission." width="240"></a><br><sub><b>Open the wrist tablet</b><br>bring up a mission in an illustrated 2D animation</sub></td>
 </tr>
 </table>
 
