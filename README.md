@@ -127,14 +127,20 @@ Apps built end to end: designed, built, tested, shipped.
 </tr>
 </table>
 
-**[CodeQuest](https://codequest-game-inky.vercel.app/)** &nbsp;|&nbsp; <sub>a modern tech-city adventure for learning Java, JavaScript, TypeScript and Python, with a free 2D runner arcade</sub>
+**[CodeQuest](https://codequest-game-inky.vercel.app/)** &nbsp;|&nbsp; <sub>learn Java, JavaScript, TypeScript or Python through a guided city adventure: rescue robots, write real code, build playable games and earn your own developer room</sub>
 
 <table align="center" width="100%">
 <tr>
-<td align="center" width="25%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-city.png" alt="CodeQuest city map with the developer beside the glowing Packet Dash arcade cabinet." width="240"></a><br><sub><b>Explore Tech City</b><br>walk between coding missions and the arcade</sub></td>
-<td align="center" width="25%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-packet-dash.png" alt="Packet Dash, a 2D city runner with an animated side-facing hoodie developer." width="240"></a><br><sub><b>Play Packet Dash</b><br>jump glitches and collect data bits</sub></td>
-<td align="center" width="25%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-console.png" alt="CodeQuest mission terminal opening with the task prompt before the coding editor." width="240"></a><br><sub><b>Build at the console</b><br>practice code and see its output</sub></td>
-<td align="center" width="25%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-tablet.png" alt="Illustrated 2D first-person view of the developer raising a wrist tablet to open a coding mission." width="240"></a><br><sub><b>Open the wrist tablet</b><br>bring up a mission in an illustrated 2D animation</sub></td>
+<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-guided-adventure.png" alt="My adventure welcomes Nova with a mentor, one clear next step and an ordered coding journey." width="420"></a><br><sub><b>One clear adventure path</b><br>begin with no coding experience and follow the next step</sub></td>
+<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-current-city.png" alt="The current CodeQuest tech city with solid buildings, coding terminals and a hoodie developer." width="420"></a><br><sub><b>Explore a living tech city</b><br>23 districts, coding missions, robots and arcade breaks</sub></td>
+</tr>
+<tr>
+<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-robot-rescue.png" alt="Robot Rescue teaches a real name variable with an illustrated robot, working code and its output." width="420"></a><br><sub><b>Learn by rescuing a robot</b><br>predict, experiment, ask for clues and run real code</sub></td>
+<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-coding-workspace.png" alt="The tablet coding workspace with GameRules and Main files, editor and actual game-design output." width="420"></a><br><sub><b>Build in your own coding workspace</b><br>folders, multiple classes, Run and output together</sub></td>
+</tr>
+<tr>
+<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-created-game.png" alt="Byte Run, a saved gem-collecting game built from the player's own GameRules program." width="420"></a><br><sub><b>Play a game you created</b><br>change the rules in code, save your design and beat it</sub></td>
+<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-wrist-tablet.png" alt="The developer's illustrated 2D hand raises a wrist tablet before entering the coding workspace." width="420"></a><br><sub><b>Raise your wrist tablet</b><br>an illustrated 2D opening connects the city to your editor</sub></td>
 </tr>
 </table>
 
