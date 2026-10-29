@@ -100,14 +100,15 @@ Designed, built, tested, deployed. Got an idea? [Let's build it.](https://amirhe
 
 Apps built end to end: designed, built, tested, shipped.
 
-**Daily Hub** &nbsp;·&nbsp; <sub>one place for habits, money, meals, to-dos and sleep</sub>
+**[Daily Hub](https://daily-hub-one-zeta.vercel.app)** &nbsp;·&nbsp; <sub>habits, money, meals, family life and sleep in one private app. English and Persian, data stays on your device</sub><br>
+<sub><a href="https://daily-hub-one-zeta.vercel.app">Open the app</a> &nbsp;·&nbsp; <a href="https://github.com/amirh3sam/lifeHubDailyMartix">Source code</a></sub>
 
 <table align="center">
 <tr>
-<td align="center" width="25%"><img src="assets/apps/hub-today.jpg" alt="Daily Hub home screen: habits, money, meals, to-dos and sleep summarised for the day." width="195"><br><sub><b>Today</b><br>the day at a glance</sub></td>
-<td align="center" width="25%"><img src="assets/apps/hub-habits.jpg" alt="Habit tracker with a week strip and five daily habits." width="195"><br><sub><b>Habits</b><br>streaks and a week strip</sub></td>
-<td align="center" width="25%"><img src="assets/apps/hub-meals.jpg" alt="Meal planner asking which cuisine you are in the mood for." width="195"><br><sub><b>Meals</b><br>cook, grocery, fridge</sub></td>
-<td align="center" width="25%"><img src="assets/apps/hub-sleep.jpg" alt="Sleep sound mixer with a timer and ready-made ambient mixes." width="195"><br><sub><b>Sleep</b><br>mixable sounds, timer</sub></td>
+<td align="center" width="25%"><a href="https://daily-hub-one-zeta.vercel.app"><img src="assets/apps/hub-today.jpg" alt="Daily Hub Today screen: 3 of 5 habits done, $19.25 spent, sleep mix and an upcoming birthday." width="195"></a><br><sub><b>Today</b><br>the day at a glance</sub></td>
+<td align="center" width="25%"><a href="https://daily-hub-one-zeta.vercel.app/habits"><img src="assets/apps/hub-habits.jpg" alt="Habit tracker with a week strip, a progress ring and five daily habits." width="195"></a><br><sub><b>Habits</b><br>streaks and a week strip</sub></td>
+<td align="center" width="25%"><a href="https://daily-hub-one-zeta.vercel.app/meals"><img src="assets/apps/hub-meals.jpg" alt="Meals tab asking which cuisine you are in the mood for: Persian, Chinese, American, Italian, Mexican, Indian, Japanese." width="195"></a><br><sub><b>Meals</b><br>cook, grocery, fridge</sub></td>
+<td align="center" width="25%"><a href="https://daily-hub-one-zeta.vercel.app/sleep"><img src="assets/apps/hub-sleep.jpg" alt="Sleep sound mixer playing the Rainy night preset, with a sleep timer and more presets." width="195"></a><br><sub><b>Sleep</b><br>mixable sounds, timer</sub></td>
 </tr>
 </table>
 
