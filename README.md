@@ -168,6 +168,19 @@ Apps built end to end: designed, built, tested, shipped.
 
 <sub><a href="https://freeonlinepdfeditor.vercel.app/">Try it live</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/FreeonlinePDFeditor">Browse the source</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/FreeonlinePDFeditor/tree/main/tests">See the tests</a></sub>
 
+**[Resistor Calculator](https://resistor-calculator-lemon.vercel.app)** &nbsp;|&nbsp; <sub>resistor colour codes both ways, SMD codes, LED resistors and series/parallel in one phone app. Installs to your home screen, works offline and remembers where you left off</sub>
+
+<table align="center">
+<tr>
+<td align="center" width="25%"><a href="https://resistor-calculator-lemon.vercel.app"><img src="assets/apps/resistor-bands.jpg" alt="Colour Bands tab: a yellow, violet, red and gold resistor read as 4.7 kΩ ±5%, with its 4.465 to 4.935 kΩ range." width="195"></a><br><sub><b>Colour Bands</b><br>tap the bands or type a value</sub></td>
+<td align="center" width="25%"><a href="https://resistor-calculator-lemon.vercel.app"><img src="assets/apps/resistor-smd.jpg" alt="SMD Code tab decoding the EIA-96 marking 01C as 10 kΩ ±1%." width="195"></a><br><sub><b>SMD Code</b><br>3-digit, 4-digit, R and EIA-96</sub></td>
+<td align="center" width="25%"><a href="https://resistor-calculator-lemon.vercel.app"><img src="assets/apps/resistor-led.jpg" alt="LED Resistor tab: three blue LEDs on 12 V at 20 mA need a 120 Ω resistor, shown on a live circuit diagram." width="195"></a><br><sub><b>LED Resistor</b><br>the right resistor and wattage</sub></td>
+<td align="center" width="25%"><a href="https://resistor-calculator-lemon.vercel.app"><img src="assets/apps/resistor-network.jpg" alt="Series / Parallel tab: 1 kΩ, 2.2 kΩ and 4.7 kΩ in parallel make 599.8 Ω, with a wiring diagram." width="195"></a><br><sub><b>Series / Parallel</b><br>combine or find a pair</sub></td>
+</tr>
+</table>
+
+<sub><a href="https://resistor-calculator-lemon.vercel.app">Open the app</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/ResistorChart">Browse the source</a></sub>
+
 <img src="assets/divider.svg" width="100%" />
 
 ## `> TECH_ARSENAL`
