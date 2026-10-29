@@ -146,6 +146,27 @@ Apps built end to end: designed, built, tested, shipped.
 
 <sub><a href="https://codequest-game-inky.vercel.app/">Play the live game</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/codequest-game">Browse the source</a></sub>
 
+**[PDF Studio](https://freeonlinepdfeditor.vercel.app/)** &nbsp;|&nbsp; <sub>a free, private PDF toolkit: merge, split, compress, convert, edit, sign and fill forms. 12 tools that run entirely in the browser, backed by 55 automated end-to-end tests</sub>
+
+<table align="center" width="100%">
+<tr>
+<td align="center" colspan="2"><a href="https://freeonlinepdfeditor.vercel.app/"><img src="assets/apps/pdfstudio-home.png" alt="PDF Studio home page with a grid of 12 PDF tools: merge, split, compress, edit, sign, fill forms, organize, rotate, page numbers, watermark, PDF to JPG and JPG to PDF." width="820"></a><br><sub><b>Every PDF tool in one place</b><br>pick a tool, drop a file, download the result. Nothing is uploaded</sub></td>
+</tr>
+<tr>
+<td align="center" width="50%"><a href="https://freeonlinepdfeditor.vercel.app/#edit"><img src="assets/apps/pdfstudio-editor.png" alt="The PDF Studio editor with a filled form, edited red price text, a highlight, an arrow, a sticky note and a typed signature." width="420"></a><br><sub><b>Edit, fill and sign</b><br>change existing text, fill form fields, add notes, arrows and signatures</sub></td>
+<td align="center" width="50%"><a href="https://freeonlinepdfeditor.vercel.app/#watermark"><img src="assets/apps/pdfstudio-watermark.png" alt="Watermark tool showing a tiled CONFIDENTIAL watermark previewed live on page thumbnails, with size, transparency, angle and colour options." width="420"></a><br><sub><b>Watermark with live preview</b><br>center or tiled, any angle, colour and transparency</sub></td>
+</tr>
+<tr>
+<td align="center" width="50%"><a href="https://freeonlinepdfeditor.vercel.app/#compress"><img src="assets/apps/pdfstudio-compress.png" alt="Compress result screen: 87 percent smaller, 4.16 MB down to 574 KB, with a Download button." width="420"></a><br><sub><b>Compress, split, merge, convert</b><br>three compression levels, ranges, zips, JPG and PDF</sub></td>
+<td align="center" width="50%"><a href="https://freeonlinepdfeditor.vercel.app/"><img src="assets/apps/pdfstudio-mobile.png" alt="PDF Studio on a phone: the tool grid, the split tool and the editor filling a form." width="420"></a><br><sub><b>Works on phones</b><br>same tools, touch-friendly layout</sub></td>
+</tr>
+<tr>
+<td align="center" colspan="2"><a href="https://github.com/amirh3sam/FreeonlinePDFeditor/tree/main/tests"><img src="assets/apps/pdfstudio-tests.png" alt="Terminal showing 55 passing Playwright end-to-end tests grouped by tool, from Home and navigation to Mobile." width="820"></a><br><sub><b>55 end-to-end tests, all green</b><br>Playwright + node:test open every downloaded file and check pages, rotation, text, images and zips, on every push</sub></td>
+</tr>
+</table>
+
+<sub><a href="https://freeonlinepdfeditor.vercel.app/">Try it live</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/FreeonlinePDFeditor">Browse the source</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/FreeonlinePDFeditor/tree/main/tests">See the tests</a></sub>
+
 <img src="assets/divider.svg" width="100%" />
 
 ## `> TECH_ARSENAL`
