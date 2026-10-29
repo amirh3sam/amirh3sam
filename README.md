@@ -146,7 +146,7 @@ Apps built end to end: designed, built, tested, shipped.
 
 <sub><a href="https://codequest-game-inky.vercel.app/">Play the live game</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/codequest-game">Browse the source</a></sub>
 
-**[PDF Studio](https://freeonlinepdfeditor.vercel.app/)** &nbsp;|&nbsp; <sub>a free, private PDF toolkit: merge, split, compress, convert, edit, sign and fill forms. 12 tools that run entirely in the browser, backed by 55 automated end-to-end tests</sub>
+**[PDF Studio](https://freeonlinepdfeditor.vercel.app/)** &nbsp;|&nbsp; <sub>a free, private PDF toolkit: merge, split, compress, convert, edit, sign and fill forms. 12 tools that run entirely in the browser, backed by 57 automated end-to-end tests</sub>
 
 <table align="center" width="100%">
 <tr>
@@ -161,7 +161,7 @@ Apps built end to end: designed, built, tested, shipped.
 <td align="center" width="50%"><a href="https://freeonlinepdfeditor.vercel.app/"><img src="assets/apps/pdfstudio-mobile.png" alt="PDF Studio on a phone: the tool grid, the split tool and the editor filling a form." width="420"></a><br><sub><b>Works on phones</b><br>same tools, touch-friendly layout</sub></td>
 </tr>
 <tr>
-<td align="center" colspan="2"><a href="https://github.com/amirh3sam/FreeonlinePDFeditor/tree/main/tests"><img src="assets/apps/pdfstudio-tests.png" alt="Terminal showing 55 passing Playwright end-to-end tests grouped by tool, from Home and navigation to Mobile." width="820"></a><br><sub><b>55 end-to-end tests, all green</b><br>Playwright + node:test open every downloaded file and check pages, rotation, text, images and zips, on every push</sub></td>
+<td align="center" colspan="2"><a href="https://github.com/amirh3sam/FreeonlinePDFeditor/tree/main/tests"><img src="assets/apps/pdfstudio-tests.png" alt="Terminal showing 57 passing Playwright end-to-end tests grouped by tool, from Home and navigation to Mobile." width="820"></a><br><sub><b>57 end-to-end tests, all green</b><br>Playwright + node:test open every downloaded file and check pages, rotation, text, images and zips, on every push</sub></td>
 </tr>
 </table>
 
