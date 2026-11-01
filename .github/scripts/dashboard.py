@@ -9,10 +9,10 @@ rather than showing a plausible-looking figure.
 W, H = 1000, 420
 MONO = "Courier New, monospace"
 
-CYAN = "#00f7ff"
-MAGENTA = "#ff00ff"
-GREEN = "#00ff41"
-YELLOW = "#fff200"
+CYAN = "#00f0ff"
+MAGENTA = "#ff00d4"
+BLUE = "#3d9bff"
+GOLD = "#f8d088"
 RED = "#ff2d55"
 DIM = "#6b7a8f"
 
@@ -90,7 +90,7 @@ def p_languages(x, y, w, h, langs):
 
 def p_months(x, y, w, h, months):
     """months: list of (label, count), oldest first."""
-    out = [panel(x, y, w, h, "COMMITS / MONTH", GREEN)]
+    out = [panel(x, y, w, h, "COMMITS / MONTH", BLUE)]
     if not months:
         out.append(unavailable(x, y, w, h, "no activity data"))
         return "".join(out)
@@ -104,17 +104,17 @@ def p_months(x, y, w, h, months):
         bh = max(2, span * n / peak)
         bx = x + 14 + i * slot + (slot - bw) / 2
         out.append(f'<rect x="{bx:.1f}" y="{base-bh:.1f}" width="{bw:.1f}" '
-                   f'height="{bh:.1f}" rx="2" fill="{GREEN}" '
+                   f'height="{bh:.1f}" rx="2" fill="{BLUE}" '
                    f'fill-opacity="{0.45 + 0.55*n/peak:.2f}" filter="url(#g)"/>')
         out.append(text(bx + bw / 2, base + 12, label, 8, DIM, anchor="middle"))
-    out.append(text(x + w - 14, y + 22, f"PEAK {peak}", 9, GREEN,
+    out.append(text(x + w - 14, y + 22, f"PEAK {peak}", 9, BLUE,
                     anchor="end", opacity=0.75))
     return "".join(out)
 
 
 def p_counter(x, y, w, h, total, public, private, saw_private, repos, today, label, bots=0):
     out = [panel(x, y, w, h, "COMMIT COUNTER", CYAN)]
-    out.append(f'<circle cx="{x+w-18}" cy="{y+18}" r="4" fill="{GREEN}" '
+    out.append(f'<circle cx="{x+w-18}" cy="{y+18}" r="4" fill="{BLUE}" '
                f'filter="url(#g)"><animate attributeName="opacity" '
                f'values="1;0.15;1" dur="2s" repeatCount="indefinite"/></circle>')
     out.append(f'<line x1="{x+14}" y1="{y+34}" x2="{x+w-14}" y2="{y+34}" '
@@ -126,7 +126,7 @@ def p_counter(x, y, w, h, total, public, private, saw_private, repos, today, lab
                     spacing=3, opacity=0.8, el_id="oc-label"))
     split = (f"{public:,} PUBLIC · {private:,} PRIVATE" if saw_private
              else "PUBLIC REPOS ONLY")
-    out.append(text(cx, y + 136, split, 10, GREEN, anchor="middle", spacing=1,
+    out.append(text(cx, y + 136, split, 10, BLUE, anchor="middle", spacing=1,
                     opacity=0.85, el_id="oc-sub"))
     meta = f"{repos} REPOS · {bots:,} AUTOMATED" if bots else f"{repos} REPOS"
     out.append(text(cx, y + 154, f"{meta} · {today}", 9,
@@ -136,14 +136,14 @@ def p_counter(x, y, w, h, total, public, private, saw_private, repos, today, lab
 
 
 def p_recent(x, y, w, h, commits):
-    out = [panel(x, y, w, h, "RECENT COMMITS", YELLOW)]
+    out = [panel(x, y, w, h, "RECENT COMMITS", GOLD)]
     if not commits:
         out.append(unavailable(x, y, w, h, "no recent commits"))
         return "".join(out)
 
     row_y = y + 44
     for repo, msg, ago in commits[:6]:
-        out.append(text(x + 14, row_y, clip(repo, 20), 10, YELLOW, opacity=0.95))
+        out.append(text(x + 14, row_y, clip(repo, 20), 10, GOLD, opacity=0.95))
         out.append(text(x + 160, row_y, clip(msg, 36), 10, "#cfe6f5", opacity=0.9))
         out.append(text(x + w - 14, row_y, ago, 9, DIM, anchor="end"))
         row_y += 20
@@ -212,7 +212,7 @@ def render(d):
         '<feGaussianBlur stdDeviation="2.5" result="b"/><feMerge>'
         '<feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
         '<pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">'
-        '<path d="M24 0H0V24" fill="none" stroke="#00f7ff" stroke-opacity="0.07"/>'
+        '<path d="M24 0H0V24" fill="none" stroke="#00f0ff" stroke-opacity="0.07"/>'
         '</pattern>',
         '</defs>',
         f'<rect width="{W}" height="{H}" rx="12" fill="#05080f"/>',

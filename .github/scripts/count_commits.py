@@ -145,7 +145,7 @@ def badge(label, value, logo, color):
     esc = lambda s: str(s).replace("-", "--").replace("_", "__").replace(" ", "_")
     return (
         f'<img alt="{label}" src="https://img.shields.io/badge/'
-        f'{esc(label)}-{esc(value)}-000000'
+        f'{esc(label)}-{esc(value)}-060817'
         f'?style=for-the-badge&logo={logo}&logoColor={color}" />'
     )
 
@@ -173,14 +173,14 @@ def main():
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     bots = automation_commits(repos)
 
-    rows = [START, badge(label, f"{total:,}", "git", "00F7FF")]
+    rows = [START, badge(label, f"{total:,}", "git", "00F0FF")]
     if saw_private:
-        rows.append(badge("PUBLIC", f"{public:,}", "unlock", "00FF41"))
-        rows.append(badge("PRIVATE", f"{private:,}", "lock", "FF00FF"))
+        rows.append(badge("PUBLIC", f"{public:,}", "unlock", "3D9BFF"))
+        rows.append(badge("PRIVATE", f"{private:,}", "lock", "FF00D4"))
     if bots:
-        rows.append(badge("AUTOMATION", f"{bots:,}", "githubactions", "FFF200"))
-    rows.append(badge("REPOS", len(repos), "github", "FF00FF"))
-    rows.append(badge("LAST SYNC", today, "githubactions", "00FF41"))
+        rows.append(badge("AUTOMATION", f"{bots:,}", "githubactions", "F8D088"))
+    rows.append(badge("REPOS", len(repos), "github", "FF00D4"))
+    rows.append(badge("LAST SYNC", today, "githubactions", "3D9BFF"))
     rows.append(END)
     block = "\n".join(rows)
 

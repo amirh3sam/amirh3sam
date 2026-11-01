@@ -2,7 +2,7 @@
 
 <img src="assets/cyberpunk-city.svg" alt="Tech City animation" width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=800&color=00F7FF&center=true&vCenter=true&width=850&lines=%3E+INITIALIZING+TECH+CITY...;%3E+WELCOME+TO+AMIRHESAM+TECH+CORP;%3E+Automation+Software+Engineer+%2F%2F+SDET;%3E+Java+%7C+Selenium+%7C+Cucumber+BDD;%3E+REST+Assured+%7C+SQL+%7C+Jenkins;%3E+I+also+BUILD+Apps+%26+Websites;%3E+Automate+%2F%2F+Test+%2F%2F+Build+%2F%2F+Deploy" alt="Typing" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=800&color=00F0FF&center=true&vCenter=true&width=850&lines=%3E+INITIALIZING+TECH+CITY...;%3E+WELCOME+TO+AMIRHESAM+TECH+CORP;%3E+Automation+Software+Engineer+%2F%2F+SDET;%3E+Java+%7C+Selenium+%7C+Cucumber+BDD;%3E+REST+Assured+%7C+SQL+%7C+Jenkins;%3E+I+also+BUILD+Apps+%26+Websites;%3E+Automate+%2F%2F+Test+%2F%2F+Build+%2F%2F+Deploy" alt="Typing" />
 
 </div>
 
@@ -186,7 +186,7 @@ Apps built end to end: designed, built, tested, shipped.
 
 <div align="center">
 
-![Java](https://img.shields.io/badge/JAVA-000000?style=flat-square&logo=openjdk&logoColor=00F7FF) ![Selenium](https://img.shields.io/badge/SELENIUM-000000?style=flat-square&logo=selenium&logoColor=00FF41) ![Cucumber](https://img.shields.io/badge/CUCUMBER-000000?style=flat-square&logo=cucumber&logoColor=00FF41) ![REST Assured](https://img.shields.io/badge/REST_ASSURED-000000?style=flat-square&logoColor=00F7FF) ![SQL](https://img.shields.io/badge/SQL-000000?style=flat-square&logo=mysql&logoColor=FF00FF) ![Jenkins](https://img.shields.io/badge/JENKINS-000000?style=flat-square&logo=jenkins&logoColor=00F7FF)
+![Java](https://img.shields.io/badge/JAVA-060817?style=flat-square&logo=openjdk&logoColor=00F0FF) ![Selenium](https://img.shields.io/badge/SELENIUM-060817?style=flat-square&logo=selenium&logoColor=3D9BFF) ![Cucumber](https://img.shields.io/badge/CUCUMBER-060817?style=flat-square&logo=cucumber&logoColor=3D9BFF) ![REST Assured](https://img.shields.io/badge/REST_ASSURED-060817?style=flat-square&logoColor=00F0FF) ![SQL](https://img.shields.io/badge/SQL-060817?style=flat-square&logo=mysql&logoColor=FF00D4) ![Jenkins](https://img.shields.io/badge/JENKINS-060817?style=flat-square&logo=jenkins&logoColor=00F0FF)
 
 </div>
 
@@ -209,18 +209,18 @@ Apps built end to end: designed, built, tested, shipped.
 <div align="center">
 
 <!--COMMIT-COUNT:START-->
-<img alt="TOTAL COMMITS" src="https://img.shields.io/badge/TOTAL_COMMITS-1,027-000000?style=for-the-badge&logo=git&logoColor=00F7FF" />
-<img alt="PUBLIC" src="https://img.shields.io/badge/PUBLIC-491-000000?style=for-the-badge&logo=unlock&logoColor=00FF41" />
-<img alt="PRIVATE" src="https://img.shields.io/badge/PRIVATE-536-000000?style=for-the-badge&logo=lock&logoColor=FF00FF" />
-<img alt="AUTOMATION" src="https://img.shields.io/badge/AUTOMATION-734-000000?style=for-the-badge&logo=githubactions&logoColor=FFF200" />
-<img alt="REPOS" src="https://img.shields.io/badge/REPOS-78-000000?style=for-the-badge&logo=github&logoColor=FF00FF" />
-<img alt="LAST SYNC" src="https://img.shields.io/badge/LAST_SYNC-2026--11--01-000000?style=for-the-badge&logo=githubactions&logoColor=00FF41" />
+<img alt="TOTAL COMMITS" src="https://img.shields.io/badge/TOTAL_COMMITS-1,027-060817?style=for-the-badge&logo=git&logoColor=00F0FF" />
+<img alt="PUBLIC" src="https://img.shields.io/badge/PUBLIC-491-060817?style=for-the-badge&logo=unlock&logoColor=3D9BFF" />
+<img alt="PRIVATE" src="https://img.shields.io/badge/PRIVATE-536-060817?style=for-the-badge&logo=lock&logoColor=FF00D4" />
+<img alt="AUTOMATION" src="https://img.shields.io/badge/AUTOMATION-734-060817?style=for-the-badge&logo=githubactions&logoColor=F8D088" />
+<img alt="REPOS" src="https://img.shields.io/badge/REPOS-78-060817?style=for-the-badge&logo=github&logoColor=FF00D4" />
+<img alt="LAST SYNC" src="https://img.shields.io/badge/LAST_SYNC-2026--11--01-060817?style=for-the-badge&logo=githubactions&logoColor=3D9BFF" />
 <!--COMMIT-COUNT:END-->
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=amirh3sam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&icon_color=FF00FF&text_color=FFFFFF" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amirh3sam&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00F7FF&text_color=FFFFFF" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=amirh3sam&show_icons=true&theme=tokyonight&hide_border=true&bg_color=060817&title_color=00F0FF&icon_color=FF00D4&text_color=FFFFFF" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amirh3sam&layout=compact&theme=tokyonight&hide_border=true&bg_color=060817&title_color=00F0FF&text_color=FFFFFF" />
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=amirh3sam&theme=tokyonight&hide_border=true&background=0D1117&stroke=00F7FF&ring=FF00FF&fire=FF00FF&currStreakLabel=00F7FF" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=amirh3sam&theme=tokyonight&hide_border=true&background=060817&stroke=00F0FF&ring=FF00D4&fire=FF00D4&currStreakLabel=00F0FF" />
 
 </div>
 
@@ -251,7 +251,7 @@ Apps built end to end: designed, built, tested, shipped.
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/AMIRHESAMTECH.COM-000000?style=for-the-badge&logo=googlechrome&logoColor=00F7FF)](https://amirhesamtech.com) [![GitHub](https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=FF00FF)](https://github.com/amirh3sam) [![TikTok](https://img.shields.io/badge/TIKTOK-000000?style=for-the-badge&logo=tiktok&logoColor=00FF41)](https://www.tiktok.com/@techwithamirh3sam)
+[![Website](https://img.shields.io/badge/AMIRHESAMTECH.COM-060817?style=for-the-badge&logo=googlechrome&logoColor=00F0FF)](https://amirhesamtech.com) [![GitHub](https://img.shields.io/badge/GITHUB-060817?style=for-the-badge&logo=github&logoColor=FF00D4)](https://github.com/amirh3sam) [![TikTok](https://img.shields.io/badge/TIKTOK-060817?style=for-the-badge&logo=tiktok&logoColor=3D9BFF)](https://www.tiktok.com/@techwithamirh3sam)
 
 </div>
 
