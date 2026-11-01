@@ -240,3 +240,11 @@ Apps built end to end: designed, built, tested, shipped.
 <p align="center">
   <img src="assets/status-panel.svg" alt="System online. Current mode: build, test, automate. Next objective: keep learning." width="100%">
 </p>
+
+<img src="assets/divider.svg" width="100%" />
+
+## `> ROUTE_MAP.exe`
+
+<a href="https://amirhesamtech.com/">
+  <img src="assets/route-map.svg" alt="Route map of how I work: idea, build, test, automate, deploy, then live on amirhesamtech.com." width="100%" />
+</a>
