@@ -48,11 +48,14 @@ def text(x, y, s, size=10, fill=CYAN, anchor="start", weight="normal",
 
 def panel(x, y, w, h, title, colour):
     """A titled panel frame in the house style."""
+    c = 12  # armor-plate corners, cut like the profile picture's jacket
+    d = f"M{x+c} {y}H{x+w}V{y+h-c}L{x+w-c} {y+h}H{x}V{y+c}Z"
     return (
-        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="#0a0f1f" '
-        f'stroke="{colour}" stroke-opacity="0.7"/>'
-        f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="8" fill="url(#grid)"/>'
-        + text(x + 14, y + 22, title, 12, colour, weight="bold")
+        f'<path d="{d}" fill="#0a0f1f" stroke="{colour}" stroke-opacity="0.45"/>'
+        f'<path d="{d}" fill="url(#grid)"/>'
+        f'<path d="M{x} {y+c+28}V{y+c}L{x+c} {y}H{x+c+56}" fill="none" '
+        f'stroke="{colour}" stroke-width="2" filter="url(#g)"/>'
+        + text(x + 16, y + 24, title, 12, colour, weight="bold")
     )
 
 

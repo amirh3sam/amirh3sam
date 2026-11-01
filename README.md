@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/cyberpunk-city.svg" alt="Tech City animation" width="100%" />
+<img src="assets/banner-hud.svg" alt="Rotating neon HUD rings around the name Amirhesam, over falling cyan-to-magenta code." width="100%" />
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=800&color=00F0FF&center=true&vCenter=true&width=850&lines=%3E+INITIALIZING+TECH+CITY...;%3E+WELCOME+TO+AMIRHESAM+TECH+CORP;%3E+Automation+Software+Engineer+%2F%2F+SDET;%3E+Java+%7C+Selenium+%7C+Cucumber+BDD;%3E+REST+Assured+%7C+SQL+%7C+Jenkins;%3E+I+also+BUILD+Apps+%26+Websites;%3E+Automate+%2F%2F+Test+%2F%2F+Build+%2F%2F+Deploy" alt="Typing" />
 
@@ -115,15 +115,12 @@ Apps built end to end: designed, built, tested, shipped.
 
 <table align="center">
 <tr>
-<td align="center" colspan="2"><img src="assets/apps/calc-glossy.png" alt="Glossy Calc in the purple dark theme, with the scientific calculator and a graph plotting three functions side by side." width="820"><br><sub><b>Glossy Calculator</b><br>scientific functions and graphing side by side</sub></td>
+<td align="center" width="50%"><img src="assets/apps/calc-dark.png" alt="Glossy Calc in the purple dark theme: sin(30)+2^3 equals 8.5, next to a graph of sin(x), x^2/4 and 1/x." width="400"><br><sub><b>Glossy Dark</b><br>purple glass, scientific keys and graph</sub></td>
+<td align="center" width="50%"><img src="assets/apps/calc-light.png" alt="Glossy Calc in the light theme with the same calculation and three graphed functions." width="400"><br><sub><b>Glossy Light</b><br>the same app on a bright lavender theme</sub></td>
 </tr>
 <tr>
-<td align="center" width="50%"><img src="assets/apps/calc-retro.png" alt="Retro Calc with orange operator keys, a green display and a graph plotting three functions." width="400"><br><sub><b>Retro Calculator</b><br>trig, logs, memory, history</sub></td>
-<td align="center" width="50%"><img src="assets/apps/calc-retro-graph.png" alt="Retro Calc graphing view with three functions and roots and intersections marked on the grid." width="400"><br><sub><b>Graph</b><br>up to five functions, roots and intersections</sub></td>
-</tr>
-<tr>
-<td align="center" width="50%"><img src="assets/apps/calc-units.png" alt="Retro Calc unit converter converting one meter to 3.28083989501 feet." width="400"><br><sub><b>Unit Converter</b><br>convert units and use the result in the calculator</sub></td>
-<td align="center" width="50%"><img src="assets/apps/calc-programmer.png" alt="Retro Calc programmer mode showing decimal, hexadecimal, octal and binary values with 32-bit signed integers selected." width="400"><br><sub><b>Programmer Mode</b><br>DEC, HEX, OCT and BIN</sub></td>
+<td align="center" width="50%"><img src="assets/apps/calc-classic.png" alt="Classic Calc with grey keys, a blue equals key and a green LCD-style display and graph." width="400"><br><sub><b>Classic</b><br>grey keys and an LCD-style display</sub></td>
+<td align="center" width="50%"><img src="assets/apps/calc-retro.png" alt="Retro Calc with orange operator keys, a green display and a green graph grid." width="400"><br><sub><b>Retro</b><br>orange keys on a green screen</sub></td>
 </tr>
 </table>
 
@@ -131,16 +128,12 @@ Apps built end to end: designed, built, tested, shipped.
 
 <table align="center" width="100%">
 <tr>
-<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-guided-adventure.png" alt="My adventure welcomes Nova with a mentor, one clear next step and an ordered coding journey." width="420"></a><br><sub><b>One clear adventure path</b><br>begin with no coding experience and follow the next step</sub></td>
 <td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-current-city.png" alt="The current CodeQuest tech city with solid buildings, coding terminals and a hoodie developer." width="420"></a><br><sub><b>Explore a living tech city</b><br>23 districts, coding missions, robots and arcade breaks</sub></td>
+<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-wrist-tablet.png" alt="The developer's illustrated 2D hand raises a wrist tablet before entering the coding workspace." width="420"></a><br><sub><b>Raise your wrist tablet</b><br>an illustrated 2D opening connects the city to your editor</sub></td>
 </tr>
 <tr>
 <td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-robot-rescue.png" alt="Robot Rescue teaches a real name variable with an illustrated robot, working code and its output." width="420"></a><br><sub><b>Learn by rescuing a robot</b><br>predict, experiment, ask for clues and run real code</sub></td>
 <td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-coding-workspace.png" alt="The tablet coding workspace with GameRules and Main files, editor and actual game-design output." width="420"></a><br><sub><b>Build in your own coding workspace</b><br>folders, multiple classes, Run and output together</sub></td>
-</tr>
-<tr>
-<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-created-game.png" alt="Byte Run, a saved gem-collecting game built from the player's own GameRules program." width="420"></a><br><sub><b>Play a game you created</b><br>change the rules in code, save your design and beat it</sub></td>
-<td align="center" width="50%"><a href="https://codequest-game-inky.vercel.app/"><img src="assets/apps/codequest-wrist-tablet.png" alt="The developer's illustrated 2D hand raises a wrist tablet before entering the coding workspace." width="420"></a><br><sub><b>Raise your wrist tablet</b><br>an illustrated 2D opening connects the city to your editor</sub></td>
 </tr>
 </table>
 
@@ -151,17 +144,6 @@ Apps built end to end: designed, built, tested, shipped.
 <table align="center" width="100%">
 <tr>
 <td align="center" colspan="2"><a href="https://freeonlinepdfeditor.vercel.app/"><img src="assets/apps/pdfstudio-home.png" alt="PDF Studio home page with a grid of 12 PDF tools: merge, split, compress, edit, sign, fill forms, organize, rotate, page numbers, watermark, PDF to JPG and JPG to PDF." width="820"></a><br><sub><b>Every PDF tool in one place</b><br>pick a tool, drop a file, download the result. Nothing is uploaded</sub></td>
-</tr>
-<tr>
-<td align="center" width="50%"><a href="https://freeonlinepdfeditor.vercel.app/#edit"><img src="assets/apps/pdfstudio-editor.png" alt="The PDF Studio editor with a filled form, edited red price text, a highlight, an arrow, a sticky note and a typed signature." width="420"></a><br><sub><b>Edit, fill and sign</b><br>change existing text, fill form fields, add notes, arrows and signatures</sub></td>
-<td align="center" width="50%"><a href="https://freeonlinepdfeditor.vercel.app/#watermark"><img src="assets/apps/pdfstudio-watermark.png" alt="Watermark tool showing a tiled CONFIDENTIAL watermark previewed live on page thumbnails, with size, transparency, angle and colour options." width="420"></a><br><sub><b>Watermark with live preview</b><br>center or tiled, any angle, colour and transparency</sub></td>
-</tr>
-<tr>
-<td align="center" width="50%"><a href="https://freeonlinepdfeditor.vercel.app/#compress"><img src="assets/apps/pdfstudio-compress.png" alt="Compress result screen: 87 percent smaller, 4.16 MB down to 574 KB, with a Download button." width="420"></a><br><sub><b>Compress, split, merge, convert</b><br>three compression levels, ranges, zips, JPG and PDF</sub></td>
-<td align="center" width="50%"><a href="https://freeonlinepdfeditor.vercel.app/"><img src="assets/apps/pdfstudio-mobile.png" alt="PDF Studio on a phone: the tool grid, the split tool and the editor filling a form." width="420"></a><br><sub><b>Works on phones</b><br>same tools, touch-friendly layout</sub></td>
-</tr>
-<tr>
-<td align="center" colspan="2"><a href="https://github.com/amirh3sam/FreeonlinePDFeditor/tree/main/tests"><img src="assets/apps/pdfstudio-tests.png" alt="Terminal showing 60 passing Playwright end-to-end tests grouped by tool, from Home and navigation to Mobile." width="820"></a><br><sub><b>60 end-to-end tests, all green</b><br>Playwright + node:test open every downloaded file and check pages, rotation, text, images and zips, on every push</sub></td>
 </tr>
 </table>
 
