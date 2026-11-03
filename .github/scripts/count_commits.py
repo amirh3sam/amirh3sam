@@ -14,6 +14,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -34,7 +35,26 @@ class RateLimited(Exception):
     """The API refused us for quota reasons, not for permissions."""
 
 
+# GitHub answers these now and then for a moment; worth another try
+RETRY_CODES = (500, 502, 503, 504)
+ATTEMPTS = 4
+
+
 def get(url, tolerate=(404, 409)):
+    """GET with a few retries on transient server or network errors."""
+    for attempt in range(ATTEMPTS):
+        try:
+            return _get_once(url, tolerate)
+        except urllib.error.HTTPError as e:
+            if e.code not in RETRY_CODES or attempt == ATTEMPTS - 1:
+                raise
+        except (urllib.error.URLError, TimeoutError):
+            if attempt == ATTEMPTS - 1:
+                raise
+        time.sleep(2 ** (attempt + 1))  # 2s, 4s, 8s
+
+
+def _get_once(url, tolerate=(404, 409)):
     """GET a URL, returning (parsed body, headers). (None, {}) on a tolerated code.
 
     404 is a repo this token cannot see, 409 an empty one, and 403 is what the
