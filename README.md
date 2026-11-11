@@ -29,6 +29,14 @@ Explore my practical tech guides, free browser apps, games and projects on [**am
 </tr>
 </table>
 
+## `> EXPLORE_AMIRHESAMBADIEI.com`
+
+<a href="https://amirhesambadiei.com/">
+  <img src="assets/personal-portal.svg" alt="Amirhesam Badiei — builder, photographer, storyteller. Explore my personal story at amirhesambadiei.com." width="100%" />
+</a>
+
+Discover my personal story, photography and work on [**amirhesambadiei.com**](https://amirhesambadiei.com/).
+
 <img src="assets/divider.svg" width="100%" />
 
 ## `> OPS_CENTER.live`
