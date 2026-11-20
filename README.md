@@ -108,6 +108,16 @@ Designed, built, tested, deployed. Got an idea? [Let's build it.](https://amirhe
 
 Apps built end to end: designed, built, tested, shipped.
 
+**[Nearsend](https://nearsend-dun.vercel.app/)** &nbsp;|&nbsp; <sub>private Wi-Fi &amp; encrypted WebRTC P2P file, photo, video and clipboard transfer between iPhone and desktop. QR pairing, gallery grid, 1-tap Save to Gallery, zero cloud storage</sub>
+
+<table align="center" width="100%">
+<tr>
+<td align="center" colspan="2"><a href="https://nearsend-dun.vercel.app/"><img src="assets/apps/nearsend.webp" alt="Nearsend transfer desk showing laptop-to-iPhone live bridge, QR code pairing card and recent photo transfers." width="820"></a><br><sub><b>Private by proximity</b><br>scan the QR code, drop files or folders, save straight to iPhone Gallery — zero cloud storage</sub></td>
+</tr>
+</table>
+
+<sub><a href="https://nearsend-dun.vercel.app/">Try it live</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/nearsend">Browse the source</a> &nbsp;|&nbsp; <a href="https://github.com/amirh3sam/nearsend/tree/main/tests">See the tests</a></sub>
+
 **Daily Hub** &nbsp;·&nbsp; <sub>habits, money, meals, family life and sleep in one private app. 7 languages, data stays on your device</sub>
 
 <table align="center">
